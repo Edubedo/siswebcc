@@ -5,16 +5,20 @@ if($_POST) {
     $imagen = (isset($_POST['imagen']))?$_POST['imagen']:"";
     $nombrecompleto = (isset($_POST['nombrecompleto']))?$_POST['nombrecompleto']:"";
     $puesto = (isset($_POST['puesto']))?$_POST['puesto']:"";
-    $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
-    $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
-    $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
+    $twiter = (isset($_POST['twiter']))?$_POST['twiter']:"";
+    $facebook = (isset($_POST['facebook']))?$_POST['facebook']:"";
+    $linkedin = (isset($_POST['linkedin']))?$_POST['linkedin']:"";
 
-    echo $icono;
-    echo $titulo;
-    echo $descripcion;
+    echo $imagen;
+    echo $nombrecompleto;
+    echo $puesto;
+    echo $twiter;
+    echo $facebook;
+    echo $linkedin;
     
-    $sentencia=$conexion->prepare("INSERT INTO `tbl_servicios` (`ID`, `icono`, `titulo`, `descripcion`) 
-    VALUES (NULL, '$icono', '$titulo', '$descripcion');");
+    $sentencia=$conexion->prepare("INSERT INTO `tbl_equipo` (`ID`, `imagen`, `nombrecompleto`, `puesto`, `twiter`, `facebook`, `linkedin`) 
+    VALUES (NULL, '$imagen', '$nombrecompleto', '$puesto', '$twiter', '$facebook', '$linkedin')");
+    
 
     $sentencia->execute();
 }

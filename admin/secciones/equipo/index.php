@@ -32,16 +32,13 @@ Listar integrante de equipo
         class="table-responsive-sm"
     >
         <table
-            class="table"
+            class="table" 
         >
             <thead>
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Nombre Completo</th>
                     <th scope="col">Puesto</th>
-                    <th scope="col">Twiter</th>
-                    <th scope="col">Facebook</th>
-                    <th scope="col">Linkeedin</th>
                     <th scope="col">Editar | Eliminar</th>
                 </tr>
             </thead>
@@ -52,9 +49,6 @@ Listar integrante de equipo
                     <td><?php echo $registro['ID'] ?></td>
                     <td><?php echo $registro['nombrecompleto'] ?></td>
                     <td><?php echo $registro['puesto'] ?></td>
-                    <td><?php echo $registro['twiter'] ?></td>
-                    <td><?php echo $registro['facebook'] ?></td>
-                    <td><?php echo $registro['linkedin'] ?></td>
                     <td>
                     <a
                             name=""
