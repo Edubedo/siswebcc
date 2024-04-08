@@ -1,4 +1,10 @@
 <?php 
+include("../../bd.php"); // We need to add the db
+ $sentencia=$conexion->prepare("SELECT * FROM `tbl_servicios`");
+ $sentencia->execute();
+    $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
+    print_r($lista_servicios); // We need to print the data inside the array
+    
     include("../../templates/header.php");
 ?>
 Listar servicios
