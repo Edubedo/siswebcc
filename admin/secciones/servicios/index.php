@@ -1,9 +1,14 @@
 <?php 
 include("../../bd.php"); // We need to add the db
+
+if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
+    $sentencia=$conexion->prepare("DELETE FROM `tbl_servicios` WHERE ID=:ID"); // Prepare the query
+    $sentencia->bindParam(':ID', $_GET['txtID']);
+    $sentencia->execute();
+}
  $sentencia=$conexion->prepare("SELECT * FROM `tbl_servicios`");
  $sentencia->execute();
     $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
-    print_r($lista_servicios); // We need to print the data inside the array
     
     include("../../templates/header.php");
 ?>
@@ -39,14 +44,37 @@ Listar servicios
                 </tr>
             </thead>
             <tbody>
-                <tr class="">
-                    <td>1</td>
-                    <td>fa-book</td>
-                    <td>tutorial</td>
-                    <td>servicios de tutorial</td>
-                    <td>Editar | Eliminar</td>
+                <!-- Go through all records -->
+                <?php foreach($lista_servicios as $registro) {?>
+                    <tr class="">
+                    <td><?php echo $registro['ID'] ?></td>
+                    <td><?php echo $registro['icono'] ?></td>
+                    <td><?php echo $registro['titulo'] ?></td>
+                    <td><?php echo $registro['descripcion'] ?></td>
+                    <td>
+                    <a
+                            name=""
+                            id=""
+                            class="btn btn-info"
+                            href="editar.php?txtID=<?php echo $registro['ID'] ?>"
+                            role="button"
+                            >Editar</a
+                        >
+                        |
+                        <a
+                            name=""
+                            id=""
+                            class="btn btn-danger"
+                            href="index.php?txtID=<?php echo $registro['ID'] ?>"
+                            role="button"
+                            >Borrar</a
+                        >
+                        
+                    </td>
                 </tr>
              
+               <?php } ?>
+              
             </tbody>
         </table>
     </div>
