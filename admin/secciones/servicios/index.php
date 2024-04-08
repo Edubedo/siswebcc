@@ -12,7 +12,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     
     include("../../templates/header.php");
 ?>
-Listar servicios
+Listar integrante de equipo
 
 
 <div class="card">

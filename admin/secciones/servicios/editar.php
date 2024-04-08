@@ -1,6 +1,8 @@
 <?php 
 include("../../bd.php"); // We need to add the db
 
+$id = $icono = $titulo = $descripcion = '';
+
 if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     $sentencia=$conexion->prepare("SELECT * FROM `tbl_servicios` WHERE ID=:ID"); // Prepare the query
     $sentencia->bindParam(':ID', $_GET['txtID']);
@@ -8,13 +10,30 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 
     $registro=$sentencia->fetch(PDO::FETCH_LAZY);
     // We need to fetch the data and we are going to receive the information for every id
+    $id = $registro['ID'];
     $icono = $registro['icono'];
     $titulo = $registro['titulo'];
     $descripcion = $registro['descripcion'];
 }
 
-    include("../../templates/header.php");
-    ?>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id = $_POST['txtID'];
+    $icono = $_POST['icono'];
+    $titulo = $_POST['titulo'];
+    $descripcion = $_POST['descripcion'];
+
+    $sentencia = $conexion->prepare("UPDATE `tbl_servicios` SET `icono`=:icono, `titulo`=:titulo, `descripcion`=:descripcion WHERE `ID`=:ID");
+    $sentencia->bindParam(':ID', $id);
+    $sentencia->bindParam(':icono', $icono);
+    $sentencia->bindParam(':titulo', $titulo);
+    $sentencia->bindParam(':descripcion', $descripcion);
+    $sentencia->execute();
+
+    header("Location: index.php"); // Redirect to the index page after successful update
+}
+
+include("../../templates/header.php");
+?>
 <div class="card">
     <div class="card-header">Editar servicio</div>
     <div class="card-body">
@@ -28,6 +47,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 id="txtID"
                 aria-describedby="helpId"
                 placeholder="ID"
+                value="<?php echo $id; ?>"
             />
         </div>
         
@@ -40,9 +60,8 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 id="icono"
                 aria-describedby="helpId"
                 placeholder="Icono"
+                value="<?php echo $icono; ?>"
             />
-
-
         </div>
 
         <div class="mb-3">
@@ -54,6 +73,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 id="titulo"
                 aria-describedby="helpId"
                 placeholder="Título"
+                value="<?php echo $titulo; ?>"
             />
         </div>
         
@@ -66,6 +86,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 id="descripcion"
                 aria-describedby="helpId"
                 placeholder="Descripción"
+                value="<?php echo $descripcion; ?>"
             />
         </div>
 
