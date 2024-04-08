@@ -1,7 +1,7 @@
 <?php 
     include("../../templates/header.php");
     ?>
-Crear servicios
+Crear equipo
 
 <?php 
     include("../../templates/footer.php");

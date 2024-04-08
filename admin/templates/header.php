@@ -31,11 +31,11 @@
                         >Administrador <span class="visually-hidden">(current)</span></a
                     >
                     <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/servicios">Servicios</a>
-                    <a class="nav-item nav-link" href="#">Portafolio</a>
-                    <a class="nav-item nav-link" href="#">Entradas</a>
-                    <a class="nav-item nav-link" href="#">Equipo</a>
-                    <a class="nav-item nav-link" href="#">Configuraciones</a>
-                    <a class="nav-item nav-link" href="#">Usuarios</a>
+                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/portafolio">Portafolio</a>
+                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/entradas">Entradas</a>
+                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/equipo">Equipo</a>
+                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/configuraciones">Configuraciones</a>
+                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/usuarios">Usuarios</a>
                 </div>
             </nav>
             
