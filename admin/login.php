@@ -4,7 +4,7 @@ include("./bd.php "); // Incluir la conexión a la base de datos
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Login</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -25,7 +25,67 @@ include("./bd.php "); // Incluir la conexión a la base de datos
         <header>
             <!-- place navbar here -->
         </header>
-        <main></main>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-4"
+                    >
+                    </div>
+                    <div
+                        class="col-4"
+                    >
+                    <div class="card">
+                        <div class="card-header">Login</div>
+                        <div class="card-body">
+                          <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="usuario" class="form-label">Usuario</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="usuario"
+                                    id="usuario"
+                                    aria-describedby="helpId"
+                                    placeholder=""
+                                />
+
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contrasenia" class="form-label">Password</label>
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    name="contrasenia"
+                                    id="contrasenia"
+                                    aria-describedby="helpId"
+                                    placeholder=""
+                                />
+                            </div>
+                            
+                            <a
+                                name=""
+                                id=""
+                                class="btn btn-primary"
+                                href="index.php"
+                                role="button"
+                                >Acceder</a
+                            >
+                            
+                            
+                          </form>
+                        </div>
+                        <div class="card-footer text-muted"></div>
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>

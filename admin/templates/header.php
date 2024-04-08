@@ -4,7 +4,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Administrador del sitio web</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -36,8 +36,10 @@
                     <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/equipo">Equipo</a>
                     <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/configuraciones">Configuraciones</a>
                     <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/usuarios">Usuarios</a>
+                    <a class="nav-item nav-link" href="<?php echo $url_base ?>login.php">Cerrar sesión</a>
                 </div>
             </nav>
             
         </header>
         <main class="container">
+            <br>
