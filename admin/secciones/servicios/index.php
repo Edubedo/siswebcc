@@ -33,7 +33,7 @@ Listar integrante de equipo
     >
         <table
             class="table"
-        >
+        > 
             <thead>
                 <tr>
                     <th scope="col">ID</th>

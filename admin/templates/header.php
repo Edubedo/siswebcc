@@ -25,20 +25,36 @@
         <header>
             <!-- place navbar here -->
 
-            <nav class="navbar navbar-expand navbar-light bg-light">
-                <div class="nav navbar-nav">
-                    <a class="nav-item nav-link active" href="#" aria-current="page"
-                        >Administrador <span class="visually-hidden">(current)</span></a
-                    >
-                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/servicios">Servicios</a>
-                    <!-- <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/portafolio">Portafolio</a> -->
-                    <!-- <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/entradas">Entradas</a> -->
-                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/equipo">Equipo</a>
-                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/configuraciones">Configuraciones</a>
-                    <a class="nav-item nav-link" href="<?php echo $url_base ?>secciones/usuarios">Usuarios</a>
-                    <a class="nav-item nav-link" href="<?php echo $url_base ?>login.php">Cerrar sesión</a>
-                </div>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" aria-current="page">Administrador</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url_base ?>secciones/servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url_base ?>secciones/entradas">Entradas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url_base ?>secciones/equipo">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url_base ?>secciones/configuraciones">Configuraciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url_base ?>secciones/usuarios">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url_base ?>login.php">Cerrar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
             
         </header>
         <main class="container">
