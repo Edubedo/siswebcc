@@ -2,18 +2,16 @@
     include("../../bd.php");
 if($_POST) {
  // if the key '' exists in the $_POST array, then assign its value to $x, otherwise assign an empty string
-    $icono = (isset($_POST['icono']))?$_POST['icono']:"";
-    $titulo = (isset($_POST['titulo']))?$_POST['titulo']:"";
-    $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
+    $usuario = (isset($_POST['usuario']))?$_POST['usuario']:"";
+    $correo = (isset($_POST['correo']))?$_POST['correo']:"";
+    $password = (isset($_POST['password']))?$_POST['password']:"";
 
-    echo $icono;
-    echo $titulo; 
-    echo $descripcion;
-    
-    $sentencia=$conexion->prepare("INSERT INTO `tbl_servicios` (`ID`, `icono`, `titulo`, `descripcion`) 
-    VALUES (NULL, '$icono', '$titulo', '$descripcion');");
+    $sentencia=$conexion->prepare("INSERT INTO `tbl_usuarios` (`ID`, `usuario`, `password`, `correo`) 
+    VALUES (NULL, '$usuario', '$password', '$correo');");
 
     $sentencia->execute();
+
+    header("Location: index.php");
 }
     include("../../templates/header.php");
 
@@ -31,6 +29,7 @@ if($_POST) {
                 id="usuario"
                 aria-describedby="helpId"
                 placeholder="Usuario"
+                required="true"
             />
         </div>
 
@@ -43,6 +42,7 @@ if($_POST) {
                 id="correo"
                 aria-describedby="helpId"
                 placeholder="Correo Electrónico"
+                required="true"
             />
         </div>
 
@@ -55,6 +55,7 @@ if($_POST) {
                 id="password"
                 aria-describedby="helpId"
                 placeholder="Contraseña"
+                required="true"
             />
         </div>
         
@@ -62,8 +63,9 @@ if($_POST) {
     <button
         type="submit"
         class="btn btn-success"
+        
     >
-        Agregar
+    Agregar
     </button>
     <a
         name=""
@@ -71,7 +73,7 @@ if($_POST) {
         class="btn btn-danger"
         href="index.php"
         role="button"
-        >Cancelar</a
+        >Volver</a
     >
     
     

@@ -2,7 +2,7 @@
 include("../../bd.php"); // We need to add the db
 
 if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
-    $sentencia=$conexion->prepare("DELETE FROM `tbl_usuarios` WHERE ID=:ID"); // Prepare the query
+    $sentencia=$conexion->prepare("DELETE FROM `tbl_usuarios` WHERE id=:ID"); // Prepare the query
     $sentencia->bindParam(':ID', $_GET['txtID']);
     $sentencia->execute();
 }
@@ -46,7 +46,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 <!-- Go through all records -->
                 <?php foreach($lista_servicios as $registro) {?>
                     <tr class="">
-                    <td><?php echo $registro['ID'] ?></td>
+                    <td><?php echo $registro['id'] ?></td>
                     <td><?php echo $registro['usuario'] ?></td>
                     <td><?php echo $registro['correo'] ?></td>
                     <td>******</td>
@@ -55,7 +55,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                             name=""
                             id=""
                             class="btn btn-info"
-                            href="editar.php?txtID=<?php echo $registro['ID'] ?>"
+                            href="editar.php?txtID=<?php echo $registro['id'] ?>"
                             role="button"
                             >Editar</a
                         >
@@ -64,7 +64,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                             name=""
                             id=""
                             class="btn btn-danger"
-                            href="index.php?txtID=<?php echo $registro['ID'] ?>"
+                            href="index.php?txtID=<?php echo $registro['id'] ?>"
                             role="button"
                             >Borrar</a
                         >

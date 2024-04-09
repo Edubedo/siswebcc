@@ -8,13 +8,6 @@ if($_POST) {
     $twiter = (isset($_POST['twiter']))?$_POST['twiter']:"";
     $facebook = (isset($_POST['facebook']))?$_POST['facebook']:"";
     $linkedin = (isset($_POST['linkedin']))?$_POST['linkedin']:"";
-
-    echo $imagen;
-    echo $nombrecompleto;
-    echo $puesto;
-    echo $twiter;
-    echo $facebook;
-    echo $linkedin;
     
     $sentencia=$conexion->prepare("INSERT INTO `tbl_equipo` (`ID`, `imagen`, `nombrecompleto`, `puesto`, `twiter`, `facebook`, `linkedin`) 
     VALUES (NULL, '$imagen', '$nombrecompleto', '$puesto', '$twiter', '$facebook', '$linkedin')");
@@ -115,7 +108,7 @@ if($_POST) {
         class="btn btn-danger"
         href="index.php"
         role="button"
-        >Cancelar</a
+        >Volver</a
     >
     
     

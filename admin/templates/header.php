@@ -19,6 +19,8 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <link rel="stylesheet" href="../../css/index.css">
     </head>
 
     <body>
@@ -37,10 +39,10 @@
                     <a class="nav-link" href="<?php echo $url_base ?>secciones/servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>secciones/entradas">Entradas</a>
+                    <a class="nav-link" href="<?php echo $url_base ?>secciones/equipo">Equipo de computo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>secciones/equipo">Equipo</a>
+                    <a class="nav-link" href="<?php echo $url_base ?>secciones/entradas">Prestamos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $url_base ?>secciones/configuraciones">Configuraciones</a>

@@ -6,14 +6,13 @@ if($_POST) {
     $titulo = (isset($_POST['titulo']))?$_POST['titulo']:"";
     $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
 
-    echo $icono;
-    echo $titulo; 
-    echo $descripcion;
-    
     $sentencia=$conexion->prepare("INSERT INTO `tbl_servicios` (`ID`, `icono`, `titulo`, `descripcion`) 
     VALUES (NULL, '$icono', '$titulo', '$descripcion');");
 
     $sentencia->execute();
+
+    header("Location: index.php");
+
 }
     include("../../templates/header.php");
 
@@ -31,6 +30,8 @@ if($_POST) {
                 id="icono"
                 aria-describedby="helpId"
                 placeholder="Icono"
+                required="true"
+
             />
 
 
@@ -45,7 +46,9 @@ if($_POST) {
                 id="titulo"
                 aria-describedby="helpId"
                 placeholder="Título"
-            />
+                required="true"
+
+                />
         </div>
         
         <div class="mb-3">
@@ -57,6 +60,8 @@ if($_POST) {
                 id="descripcion"
                 aria-describedby="helpId"
                 placeholder="Descripción"
+                required="true"
+
             />
         </div>
 
@@ -72,7 +77,7 @@ if($_POST) {
         class="btn btn-danger"
         href="index.php"
         role="button"
-        >Cancelar</a
+        >Volver</a
     >
     
     

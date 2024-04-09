@@ -102,7 +102,7 @@ include("../../templates/header.php");
         class="btn btn-danger"
         href="index.php"
         role="button"
-        >Cancelar</a
+        >Volver</a
     >
     
     

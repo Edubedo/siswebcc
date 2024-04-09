@@ -7,7 +7,6 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     $sentencia=$conexion->prepare("SELECT * FROM `tbl_equipo` WHERE ID=:ID"); // Prepare the query
     $sentencia->bindParam(':ID', $_GET['txtID']);
     $sentencia->execute();
-    echo $_GET['txtID'];
 
     $registro=$sentencia->fetch(PDO::FETCH_LAZY);
     $id = $registro['ID'];
@@ -154,7 +153,7 @@ include("../../templates/header.php");
         class="btn btn-danger"
         href="index.php"
         role="button"
-        >Cancelar</a
+        >Volver</a
     >
     
     
