@@ -10,7 +10,6 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     echo $_GET['txtID'];
 
     $registro=$sentencia->fetch(PDO::FETCH_LAZY);
-    // We need to fetch the data and we are going to receive the information for every id
     $id = $registro['ID'];
     $imagen = $registro['imagen'];
     $nombrecompleto = $registro['nombrecompleto'];

@@ -7,7 +7,7 @@ if($_POST) {
     $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
 
     echo $icono;
-    echo $titulo;
+    echo $titulo; 
     echo $descripcion;
     
     $sentencia=$conexion->prepare("INSERT INTO `tbl_servicios` (`ID`, `icono`, `titulo`, `descripcion`) 
