@@ -1,4 +1,10 @@
 <?php 
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: ../../login.php");
+    exit();
+}
 include("../../bd.php"); // We need to add the db
 
 $id = $imagen = $nombrecompleto = $puesto = $twiter = $facebook = $linkedin = '';

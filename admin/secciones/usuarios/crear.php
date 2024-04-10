@@ -1,4 +1,10 @@
 <?php 
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: ../../login.php");
+    exit();
+}
     include("../../bd.php");
 if($_POST) {
  // if the key '' exists in the $_POST array, then assign its value to $x, otherwise assign an empty string
