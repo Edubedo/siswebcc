@@ -51,7 +51,7 @@
                     <a class="nav-link" href="<?php echo $url_base ?>secciones/usuarios">Usuarios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>login.php">Cerrar sesión</a>
+                    <a class="nav-link" href="<?php echo $url_base ?>cerrar.php">Cerrar sesión</a>
                 </li>
             </ul>
         </div>

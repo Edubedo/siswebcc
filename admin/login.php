@@ -1,5 +1,29 @@
 <?php
-include("./bd.php "); // Incluir la conexión a la base de datos	
+session_start();
+
+include("./bd.php"); // Incluir la conexión a la base de datos
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usuario = $_POST['usuario'];
+    $contrasenia = $_POST['contrasenia'];
+
+    $sentencia = $conexion->prepare("SELECT * FROM `tbl_usuarios` WHERE usuario = :usuario AND password = :contrasenia");
+    $sentencia->bindParam(':usuario', $usuario);
+    $sentencia->bindParam(':contrasenia', $contrasenia);
+    $sentencia->execute();
+
+    $usuario = $sentencia->fetch(PDO::FETCH_ASSOC);
+
+    if ($usuario) {
+        // Usuario y contraseña correctos. Iniciar sesión y redirigir a la página de inicio
+        session_start();
+        $_SESSION['usuario'] = $usuario;
+        header("Location: index.php");
+    } else {
+        // Usuario o contraseña incorrectos. Mostrar un mensaje de error
+        $error = "Usuario o contraseña incorrectos";
+    }
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -64,15 +88,13 @@ include("./bd.php "); // Incluir la conexión a la base de datos
                                     placeholder=""
                                 />
                             </div>
+
+                            <?php if (isset($error)): ?>
+                            <p><?php echo $error; ?></p>
+                          <?php endif; ?>
                             
-                            <a
-                                name=""
-                                id=""
-                                class="btn btn-primary"
-                                href="index.php"
-                                role="button"
-                                >Acceder</a
-                            >
+                          <button type="submit" class="btn btn-primary">Acceder</button>
+
                             
                             
                           </form>

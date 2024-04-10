@@ -1,4 +1,11 @@
-<?php include("./templates/header.php"); ?>
+<?php 
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit();
+}
+include("./templates/header.php"); ?>
 <br>
 <div class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5">
