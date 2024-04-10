@@ -100,7 +100,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				border-radius: 30px;
                 color: #000;
 				padding: 0 0 0 42px;
-				background: rgba(255, 255, 255, 0.1);
+				background: rgba(233, 233, 233, 0.1);
+				border: 1px solid black;
 			}
 			i {
 				position: relative;
