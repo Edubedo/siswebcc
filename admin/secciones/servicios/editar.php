@@ -38,9 +38,8 @@ include("../../templates/header.php");
     <div class="card-header">Editar servicio</div>
     <div class="card-body">
     <form action="" enctype="multipart/form-data" method="post">
-        <div class="mb-3">
-            <label for="txtID" class="form-label">ID: </label>
-            <input
+        <div>
+            <input        type="hidden"
                 type="text"
                 class="form-control"
                 name="txtID"
@@ -94,7 +93,7 @@ include("../../templates/header.php");
         type="submit"
         class="btn btn-success"
     >
-        Agregar
+        Editar
     </button>
     <a
         name=""

@@ -21,14 +21,16 @@
         $usuario = $_POST['usuario'];
         $correo = $_POST['correo'];
         $password = $_POST['password'];
-
-        $sentencia = $conexion->prepare("UPDATE `tbl_usuarios` SET `usuario` = 'EZE122', `password` = 'eze222', `correo` = 'eze321' WHERE `tbl_usuarios`.`id` = 15
-        ");
+    
+        $sentencia = $conexion->prepare("UPDATE `tbl_usuarios` SET `usuario` = :usuario, `password` = :password, `correo` = :correo WHERE `tbl_usuarios`.`id` = :id");
+        $sentencia->bindParam(':usuario', $usuario);
+        $sentencia->bindParam(':password', $password);
+        $sentencia->bindParam(':correo', $correo);
+        $sentencia->bindParam(':id', $id);
         $sentencia->execute();
     
         header("Location: index.php"); // Redirect to the index page after successful update
     }
-    
 
     include("../../templates/header.php");
 
@@ -37,6 +39,13 @@
     <div class="card-header">Editar usuario</div>
     <div class="card-body">
     <form action="" enctype="multipart/form-data" method="post">
+    <div>
+    <input
+        type="hidden"
+        name="txtID"
+        value="<?php echo $id; ?>"
+    />
+</div>
         <div class="mb-3">
             <label for="usuario" class="form-label">Usuario:</label>
             <input
@@ -46,7 +55,7 @@
                 id="usuario"
                 aria-describedby="helpId"
                 placeholder="Usuario"
-                required="true"
+                required="true" 
                 value="<?php echo $usuario; ?>"
             />
         </div>
