@@ -1,4 +1,4 @@
-  =>  Template Name    : Sistema Prestamos Equipos Computo - Coffee Shop HTML Template
+  =>  Template Name    : SPEC - Coffee Shop HTML Template
 
   =>  Template Link    : https://htmlcodex.com/coffee-shop-html-template
 
