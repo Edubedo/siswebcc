@@ -149,8 +149,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="container">
 				<div>
                 <div class="top-header">
-					<span>SWCI Corporati&oacute;n</span>
-					<header>Iniciar Sesion</header>
+					<h1>SPCC</h1>
+					<h2>Iniciar Sesion</h2>
 				</div>
                 
                 <form action="" method="post">
@@ -201,8 +201,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<label><a href="restaurarContrasena.php">¿Olvidaste la contraseña?</a></label>
 					</div>
 				</div>
-                </div>
 			</div>
+		<a href="../index.html" style="text-align:left">Volver al blog</a>
+
+		</div>
 		</div>
         <!-- Bootstrap JavaScript Libraries -->
         <script
