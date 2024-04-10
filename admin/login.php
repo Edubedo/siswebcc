@@ -181,7 +181,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				</div>
 
                 <?php if (isset($error)): ?>
-				<p><?php echo $error; ?></p>
+				<p style="color:red"><?php echo $error; ?></p>
 				<?php endif; ?>
 				<div class="input-field">
 					<input type="submit" class="submit" value="Acceder" />
@@ -197,7 +197,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<label for="check"> Recordarme</label>
 					</div>
 					<div class="right">
-						<label><a href="#">¿Olvidaste la contraseña?</a></label>
+						<label><a href="restaurarContrasena.php">¿Olvidaste la contraseña?</a></label>
 					</div>
 				</div>
                 </div>
