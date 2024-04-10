@@ -64,19 +64,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			.container {
 				width: 350px;
 				display: flex;
+                text-align: center;
+                background: #fff;
 				flex-direction: column;
-				padding: 0 15px 0 15px;
+                color: #000;
+				padding: 30px 50px ;
+                border-radius: 10px;
 			}
             
 			span {
-				color: #fff;
+                color: #000;
 				font-size: small;
 				display: flex;
 				justify-content: center;
 				padding: 10px 0 15px 0;
 			}
 			header {
-				color: #fff;
+                color: #000;
 				font-size: 30px;
 				display: flex;
 				justify-content: center;
@@ -94,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				border: none;
 				outline: none;
 				border-radius: 30px;
-				color: #fff;
+                color: #000;
 				padding: 0 0 0 42px;
 				background: rgba(255, 255, 255, 0.1);
 			}
@@ -102,10 +106,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				position: relative;
 				top: -31px;
 				left: 17px;
-				color: #fff;
+                color: #000;
 			}
 			::-webkit-input-placeholder {
-				color: #fff;
+                color: #000;
 			}
 			.submit {
 				border: none;
@@ -113,8 +117,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				font-size: 15px;
 				height: 45px;
 				outline: none;
-				width: 100%;
-				background: rgba(255, 255, 255, 0.7);
+				width: 100px;
+				background: rgba(230, 230, 230, 0.7);
 				cursor: pointer;
 				transition: 0.3s;
 			}
@@ -126,14 +130,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				flex-direction: row;
 				justify-content: space-between;
 				font-size: small;
-				color: #fff;
+                color: #000;
 				margin-top: 10px;
 			}
 			.left {
 				display: flex;
 			}
 			label a {
-				color: #fff;
+                color: #000;
 				text-decoration: none;
 			}
 		</style>
@@ -142,7 +146,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <body>
     <div class="box">
 			<div class="container">
-				<div class="top-header">
+				<div>
+                <div class="top-header">
 					<span>SWCI Corporati&oacute;n</span>
 					<header>Iniciar Sesion</header>
 				</div>
@@ -195,6 +200,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<label><a href="#">¿Olvidaste la contraseña?</a></label>
 					</div>
 				</div>
+                </div>
 			</div>
 		</div>
         <!-- Bootstrap JavaScript Libraries -->

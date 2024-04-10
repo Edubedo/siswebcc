@@ -1,5 +1,6 @@
 <?php
-    $url_base="http://localhost/swci/admin/"
+    $url_admin="http://localhost/swci/admin/";
+    $url_blog="http://localhost/swci/"
 ?>
 <!doctype html>
 <html lang="en">
@@ -36,22 +37,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>secciones/servicios">Servicios</a>
+                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>secciones/equipo">Equipo de computo</a>
+                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/equipo">Equipo de computo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>secciones/entradas">Prestamos</a>
+                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/entradas">Prestamos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>secciones/configuraciones">Configuraciones</a>
+                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/configuraciones">Configuraciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>secciones/usuarios">Usuarios</a>
+                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/usuarios">Usuarios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_base ?>cerrar.php">Cerrar sesión</a>
+                    <a class="nav-link" href="<?php echo $url_blog ?>">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url_admin ?>cerrar.php">Cerrar sesión</a>
                 </li>
             </ul>
         </div>
