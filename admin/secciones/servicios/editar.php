@@ -21,7 +21,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     $titulo = $registro['titulo'];
     $descripcion = $registro['descripcion'];
 }
-
+ 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['txtID'];
     $icono = $_POST['icono'];

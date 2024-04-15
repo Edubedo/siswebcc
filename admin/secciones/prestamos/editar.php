@@ -7,7 +7,7 @@ if (!isset($_SESSION['usuario'])) {
 }
     include("../../templates/header.php");
     ?>
-Editar portafolio
+Editar prestamo
 
 <?php 
     include("../../templates/footer.php");

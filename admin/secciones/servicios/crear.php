@@ -23,7 +23,7 @@ if($_POST) {
 ?>
 
 <div class="card">
-    <div class="card-header">Crear servicios</div>
+    <div class="card-header">Crear servicio</div>
     <div class="card-body">
     <form action="" enctype="multipart/form-data" method="post">
         <div class="mb-3">
@@ -40,7 +40,7 @@ if($_POST) {
             />
 
 
-        </div>
+        </div> 
 
         <div class="mb-3">
             <label for="titulo" class="form-label">Título</label>

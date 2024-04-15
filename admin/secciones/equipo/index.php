@@ -18,7 +18,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     
     include("../../templates/header.php");
 ?>
-Listar integrante de equipo
+<h2>Listar material de computo</h2>
 
 
 <div class="card">

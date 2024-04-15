@@ -21,10 +21,10 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
  $sentencia=$conexion->prepare("SELECT * FROM `tbl_servicios`");
  $sentencia->execute();
     $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
-    
+     
     include("../../templates/header.php");
 ?>
-<h2>Listar integrante de equipo</h2>
+<h2>Listar servicios</h2>
 
 
 <div class="card">
