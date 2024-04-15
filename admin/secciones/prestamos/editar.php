@@ -6,8 +6,9 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
     include("../../templates/header.php");
-?>
-Listar portafolio
+    ?>
+Editar portafolio
+
 <?php 
     include("../../templates/footer.php");
-?>
+?> 

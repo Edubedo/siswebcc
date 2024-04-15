@@ -6,14 +6,12 @@
 <html lang="en">
     <head>
         <title>Administrador del sitio web</title>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -26,8 +24,6 @@
 
     <body>
         <header>
-            <!-- place navbar here -->
-
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#" aria-current="page">Administrador</a>
@@ -43,7 +39,7 @@
                     <a class="nav-link" href="<?php echo $url_admin ?>secciones/equipo">Equipo de computo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/entradas">Prestamos</a>
+                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/prestamos">Prestamos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $url_admin ?>secciones/configuraciones">Configuraciones</a>
