@@ -20,6 +20,8 @@ if($_POST) {
     
 
     $sentencia->execute();
+    header("Location: index.php");
+
 }
     include("../../templates/header.php");
 

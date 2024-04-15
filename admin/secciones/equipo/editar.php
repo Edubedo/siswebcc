@@ -55,7 +55,7 @@ include("../../templates/header.php");
     <div class="mb-3">
             
     
-    <label for="txtID" class="form-label">ID: </label>
+    <label for="txtID" class="form-label">ID: <?php echo $id; ?></label>
 
     <input
                 type="text"
@@ -65,6 +65,7 @@ include("../../templates/header.php");
                 aria-describedby="helpId"
                 placeholder="ID"
                 value="<?php echo $id; ?>"
+                hidden="true"
             />
         </div>
     <div class="mb-3">

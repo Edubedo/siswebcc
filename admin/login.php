@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include("./bd.php"); // Incluir la conexión a la base de datos
+include("./bd.php"); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $_POST['usuario'];
@@ -15,12 +15,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $sentencia->fetch(PDO::FETCH_ASSOC);
 
     if ($usuario) {
-        // Usuario y contraseña correctos. Iniciar sesión y redirigir a la página de inicio
         session_start();
         $_SESSION['usuario'] = $usuario;
         header("Location: index.php");
     } else {
-        // Usuario o contraseña incorrectos. Mostrar un mensaje de error
         $error = "Usuario o contraseña incorrectos";
     }
 }
@@ -36,7 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"

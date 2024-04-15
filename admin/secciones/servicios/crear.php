@@ -16,13 +16,12 @@ if($_POST) {
     VALUES (NULL, '$icono', '$titulo', '$descripcion');");
 
     $sentencia->execute();
-
+ 
     header("Location: index.php");
-
 }
     include("../../templates/header.php");
-
 ?>
+
 <div class="card">
     <div class="card-header">Crear servicios</div>
     <div class="card-body">
