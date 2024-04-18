@@ -8,17 +8,17 @@ if (!isset($_SESSION['usuario'])) {
 include("../../bd.php"); // We need to add the db
 
 if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
-    $sentencia=$conexion->prepare("DELETE FROM `tbl_equipo` WHERE ID=:ID"); // Prepare the query
+    $sentencia=$conexion->prepare("DELETE FROM `tbl_equipos_computo` WHERE ID=:ID"); // Prepare the query
     $sentencia->bindParam(':ID', $_GET['txtID']);
     $sentencia->execute();
 }
- $sentencia=$conexion->prepare("SELECT * FROM `tbl_equipo`");
+ $sentencia=$conexion->prepare("SELECT * FROM `tbl_equipos_computo`");
  $sentencia->execute();
     $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
     
     include("../../templates/header.php");
 ?>
-<h2>Listar material de computo</h2>
+<h2>Listar materiales de computo</h2>
 
 
 <div class="card">
@@ -43,8 +43,9 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Nombre Completo</th>
-                    <th scope="col">Puesto</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Asignad@</th>
                     <th scope="col">Editar | Eliminar</th>
                 </tr>
             </thead>
@@ -53,8 +54,9 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 <?php foreach($lista_servicios as $registro) {?>
                     <tr class="">
                     <td><?php echo $registro['ID'] ?></td>
-                    <td><?php echo $registro['nombrecompleto'] ?></td>
-                    <td><?php echo $registro['puesto'] ?></td>
+                    <td><?php echo $registro['nombre'] ?></td>
+                    <td><?php echo $registro['tipo'] ?></td>
+                    <td><?php echo $registro['asignado'] ?></td>
                     <td>
                     <a
                             name=""

@@ -8,17 +8,18 @@ if (!isset($_SESSION['usuario'])) {
     include("../../bd.php");
 if($_POST) {
  // if the key '' exists in the $_POST array, then assign its value to $x, otherwise assign an empty string
-    $imagen = (isset($_POST['imagen']))?$_POST['imagen']:"";
-    $nombrecompleto = (isset($_POST['nombrecompleto']))?$_POST['nombrecompleto']:"";
-    $puesto = (isset($_POST['puesto']))?$_POST['puesto']:"";
-    $twiter = (isset($_POST['twiter']))?$_POST['twiter']:"";
-    $facebook = (isset($_POST['facebook']))?$_POST['facebook']:"";
-    $linkedin = (isset($_POST['linkedin']))?$_POST['linkedin']:"";
+ $nombre = (isset($_POST['nombre']))?$_POST['nombre']:"";
+ $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
+ $url_foto = (isset($_POST['url_foto']))?$_POST['url_foto']:"";
+ $puesto = (isset($_POST['puesto']))?$_POST['puesto']:"";
+ $asignado = (isset($_POST['asignado']))?$_POST['asignado']:"";
+ $tipo = (isset($_POST['tipo']))?$_POST['tipo']:"";
     
-    $sentencia=$conexion->prepare("INSERT INTO `tbl_equipo` (`ID`, `imagen`, `nombrecompleto`, `puesto`, `twiter`, `facebook`, `linkedin`) 
-    VALUES (NULL, '$imagen', '$nombrecompleto', '$puesto', '$twiter', '$facebook', '$linkedin')");
+    $sentencia=$conexion->prepare("INSERT INTO `tbl_equipos_computo` (`ID`, `nombre`, `descripcion`, `url_foto`, `asignado`, `tipo`)  
+    VALUES (NULL, '$nombre', '$descripcion', '$url_foto', '$asignado', '$tipo')");    
     
-
+    
+    
     $sentencia->execute();
     header("Location: index.php");
 
@@ -27,16 +28,16 @@ if($_POST) {
 
 ?>
 <div class="card">
-    <div class="card-header">Crear integrante de equipo</div>
+    <div class="card-header">Crear material de computo</div>
     <div class="card-body">
     <form action="" enctype="multipart/form-data" method="post">
         <div class="mb-3">
-            <label for="imagen" class="form-label">Imagen:</label>
+            <label for="url_foto" class="form-label">Imagen:</label>
             <input
                 type="text"
                 class="form-control"
-                name="imagen"
-                id="imagen"
+                name="url_foto"
+                id="url_foto"
                 aria-describedby="helpId"
                 placeholder="Imagen"
             />
@@ -45,64 +46,42 @@ if($_POST) {
         </div>
 
         <div class="mb-3">
-            <label for="nombrecompleto" class="form-label">Nombre Completo</label>
+            <label for="nombre" class="form-label">Nombre</label>
             <input
                 type="text"
                 class="form-control"
-                name="nombrecompleto"
-                id="nombrecompleto"
+                name="nombre"
+                id="nombre"
                 aria-describedby="helpId"
-                placeholder="Nombre Completo"
+                placeholder="Nombre"
             />
         </div>
         
         <div class="mb-3">
-            <label for="puesto" class="form-label">Puesto</label>
+            <label for="tipo" class="form-label">Tipo</label>
             <input
                 type="text"
                 class="form-control"
-                name="puesto"
-                id="puesto"
+                name="tipo"
+                id="tipo"
                 aria-describedby="helpId"
-                placeholder="Puesto"
+                placeholder="Tipo"
             />
         </div>
 
         <div class="mb-3">
-            <label for="twiter" class="form-label">Twiter</label>
+            <label for="asignado" class="form-label">Empleado asignado</label>
             <input
                 type="text"
                 class="form-control"
-                name="twiter"
-                id="twiter"
+                name="asignado"
+                id="asignado"
                 aria-describedby="helpId"
-                placeholder="Twiter"
+                placeholder="Tipo"
             />
         </div>
 
-        <div class="mb-3">
-            <label for="facebook" class="form-label">Facebook</label>
-            <input
-                type="text"
-                class="form-control"
-                name="facebook"
-                id="facebook"
-                aria-describedby="helpId"
-                placeholder="Facebook"
-            />
-        </div>
-
-        <div class="mb-3">
-            <label for="linkedin" class="form-label">Linkeedin</label>
-            <input
-                type="text"
-                class="form-control"
-                name="linkedin"
-                id="linkedin"
-                aria-describedby="helpId"
-                placeholder="Linkeedin"
-            />
-        </div>
+      
 
     <button
         type="submit"
