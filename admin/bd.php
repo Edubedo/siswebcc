@@ -1,4 +1,7 @@
 <?php 
+        $var = include("./keys.php");
+     echo $var;
+
 $servidor = "localhost"; // Nombre del servidor 
 $baseDeDatos = "website"; // Nombre de la base de datos
 $usuario = "root"; // Nombre de usuario
