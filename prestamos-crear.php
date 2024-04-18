@@ -40,7 +40,6 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
  $sentencia->execute();
     $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
      
-    include("../../templates/header.php");
 ?>
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
@@ -87,53 +86,74 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 
     <!-- Prestamos Start -->
     
-<div class="card">
-    <div class="card-header">
+    <div class="card">
+    <div class="card-header">Crear prestamo</div>
+    <div class="card-body">
+    <form action="" enctype="multipart/form-data" method="post">
+        <div class="mb-3">
+            <label for="icono" class="form-label">Icono:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="icono"
+                id="icono"
+                aria-describedby="helpId"
+                placeholder="Icono"
+                required="true"
+
+            />
+
+
+        </div> 
+
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input
+                type="text"
+                class="form-control"
+                name="titulo"
+                id="titulo"
+                aria-describedby="helpId"
+                placeholder="Título"
+                required="true"
+
+                />
+        </div>
+        
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input
+                type="text"
+                class="form-control"
+                name="descripcion"
+                id="descripcion"
+                aria-describedby="helpId"
+                placeholder="Descripción"
+                required="true"
+
+            />
+        </div>
+
+    <button
+        type="submit"
+        class="btn btn-success"
+    >
+        Agregar
+    </button>
     <a
         name=""
         id=""
-        class="btn btn-primary"
-        href="prestamos-crear.php"
+        class="btn btn-danger"
+        href="prestamos.php"
         role="button"
-        >Agregar registro</a
+        >Volver</a
     >
-        
-    </div>
-    <div class="card-body">
-    <div
-        class="table-responsive-sm"
-    >
-        <table
-            class="table"
-        > 
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Asunto</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Fecha  Creación</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Go through all records -->
-                <?php foreach($lista_servicios as $registro) {?>
-                    <tr class="">
-                    <td><?php echo $registro['ID'] ?></td>
-                    <td><?php echo $registro['s_asunto'] ?></td>
-                    <td><?php echo $registro['s_descripcion'] ?></td>
-                    <td><?php echo $registro['d_fecha_creacion'] ?></td>
-                    <td>
-           
-                        
-                    </td>
-                </tr>
-             
-               <?php } ?>
-              
-            </tbody>
-        </table>
-    </div>
     
+    
+    </form>
+    </div>
+    <div class="card-footer text-muted">
+
     </div>
 </div>
     <!-- Prestamos End -->
