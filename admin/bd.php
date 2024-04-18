@@ -1,11 +1,11 @@
 <?php 
-        $var = include("./keys.php");
-     echo $var;
+        require "./keys.php";
+      
 
-$servidor = "localhost"; // Nombre del servidor 
-$baseDeDatos = "website"; // Nombre de la base de datos
-$usuario = "root"; // Nombre de usuario
-$contrasenia = "12345678"; // Contraseña
+$servidor = $keys['SERVER_DB']; // Nombre del servidor 
+$baseDeDatos = $keys['DB_DB']; // Nombre de la base de datos
+$usuario = $keys['USER_DB']; // Nombre de usuario
+$contrasenia = $keys['PASSWORD_DB']; // Contraseña
 
 try {
     $conexion = new PDO("mysql:host=$servidor;dbname=$baseDeDatos",$usuario,$contrasenia);
