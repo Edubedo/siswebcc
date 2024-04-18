@@ -133,6 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 color: #000;
 				text-decoration: none;
 			}
+			
 		</style>
     </head>
 
@@ -141,12 +142,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="container">
 				<div>
                 <div class="top-header">
-					<h1>SPCC</h1>
+					<h1>Siwebcc</h1>
 					<h2>Iniciar Sesion</h2>
 				</div>
                 
                 <form action="" method="post">
-                <div class="mb-3">
                 <div class="input-field">
 					<input
 						type="usuario"
@@ -198,7 +198,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		</div>
 		</div>
-        <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
