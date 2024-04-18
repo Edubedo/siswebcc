@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			.input-field .input {
 				display: inline-block;
 				height: 45px;
-				width: 100%;
+				width: 70%;
 				border: none;
 				outline: none;
 				border-radius: 30px;
@@ -132,6 +132,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			label a {
                 color: #000;
 				text-decoration: none;
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
 			}
 			
 		</style>
