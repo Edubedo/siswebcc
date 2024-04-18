@@ -2,7 +2,7 @@
 $servidor = "localhost"; // Nombre del servidor 
 $baseDeDatos = "website"; // Nombre de la base de datos
 $usuario = "root"; // Nombre de usuario
-$contrasenia = "eduar2006"; // Contraseña
+$contrasenia = "12345678"; // Contraseña
 
 try {
     $conexion = new PDO("mysql:host=$servidor;dbname=$baseDeDatos",$usuario,$contrasenia);

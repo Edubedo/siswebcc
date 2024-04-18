@@ -1,6 +1,6 @@
 <?php
-    $url_admin="http://localhost/swci/admin/";
-    $url_blog="http://localhost/swci/"
+    $url_admin="http://localhost/siwebcc/admin/";
+    $url_blog="http://localhost/siwebcc/"
 ?>
 <!doctype html>
 <html lang="en">
