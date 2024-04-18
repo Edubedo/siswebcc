@@ -36,7 +36,7 @@
                     <a class="nav-link" href="<?php echo $url_admin ?>secciones/servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/equipo">Equipo de computo</a>
+                    <a class="nav-link" href="<?php echo $url_admin ?>secciones/equipo">Materiales de computo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $url_admin ?>secciones/prestamos">Prestamos</a>
