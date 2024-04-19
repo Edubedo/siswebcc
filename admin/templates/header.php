@@ -1,6 +1,8 @@
 <?php
-    $url_admin="siswebcc-d1eecd8d184b.herokuapp.com/admin/";
-    $url_blog="siswebcc-d1eecd8d184b.herokuapp.com/"
+    $url_admin="https://siswebcc-d1eecd8d184b.herokuapp.com/admin/";
+    // $url_admin="http://localhost/siwebcc/admin/";
+    $url_blog="https://siswebcc-d1eecd8d184b.herokuapp.com/"
+    // $url_blog="http://localhost/siwebcc/"
 ?>
 <!doctype html>
 <html lang="en">
