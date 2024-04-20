@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>SPEC | Sistema de prestamo de equipos de computo</title>
+<title>Solicitar prestamo | Sistema de prestamo de equipos de computo</title>
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->

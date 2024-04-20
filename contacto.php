@@ -3,7 +3,7 @@
 
 <head>
 <head>
-    <title>SPEC | Sistema de prestamo de equipos de computo</title>
+    <title>SISWEBCC | Sistema de prestamo de equipos de computo</title>
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->
