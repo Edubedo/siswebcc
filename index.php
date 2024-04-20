@@ -63,6 +63,13 @@
 <?php include("./templates/views/equipos-computo.php");?>
     <!-- Equipos Computo Fin -->
 
+       <!-- Contacto Inicio -->
+       <?php include("./templates/views/contacto.php");?>
+    <!-- Contacto Fin -->
+
+ <!-- Empleados Inicio -->
+ <?php include("./templates/views/empleados.php");?>
+    <!-- Empleados Fin -->
 
     <!-- Footer Inicio -->
     <?php include("./templates/footer.php");?>    <!-- Footer Fin -->
