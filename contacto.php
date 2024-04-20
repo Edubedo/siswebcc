@@ -3,7 +3,7 @@
 
 <head>
 <head>
-    <title>SISWEBCC | Sistema de prestamo de equipos de computo</title>
+    <title>Contacto | Sistema de prestamo de equipos de computo</title>
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->
@@ -21,7 +21,7 @@
     <!-- Navbar Fin -->
 
 
-    <!-- Page Header Inicio -->
+    <!-- Página Encabezado Inicio -->
     <div class="mb-5 container-fluid page-header position-relative overlay-bottom">
         <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 400px">
             <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Contactos</h1>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <!-- Page Header Fin -->
+    <!-- Página Encabezado Fin -->
 
 
     <!-- Contact Inicio -->

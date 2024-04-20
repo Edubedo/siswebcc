@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>SISWEBCC | Sistema de prestamo de equipos de computo</title>
+    <title>SPEC | Sistema de prestamo de equipos de computo</title>
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->
@@ -49,7 +49,9 @@
         </div>
     </div>
     <!-- Carousel Fin -->
-
+  <!-- Servicios Inicio -->
+  <?php include("./templates/views/servicios.php");?>
+    <!-- Servicios Fin -->
 
     <!-- About Inicio -->
     <div class="py-5 container-fluid">
@@ -87,7 +89,7 @@
     <!-- About Fin -->
 
 
-    <!-- Servicios Inicio -->
+    <!-- Service Inicio -->
     <div class="pt-5 container-fluid">
         <div class="container">
             <div class="section-title">
@@ -150,7 +152,7 @@
             </div>
         </div>
     </div>
-    <!-- Servicios Fin -->
+    <!-- Service Fin -->
 
 
     <!-- Offer Inicio -->
