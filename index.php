@@ -53,124 +53,24 @@
   <?php include("./templates/views/servicios.php");?>
     <!-- Servicios Fin -->
 
+    
+    <!-- Reseñas Inicio -->
+    <?php include("./templates/views/resenas.php");?>
+    <!-- Reseñas Fin -->
+
+
     <!-- About Inicio -->
-    <div class="py-5 container-fluid">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sobre nosotros</h4>
-                <h1 class="display-4">Equipo de trabajo</h1>
-            </div>
-            <div class="col-lg-6">
-                <div class="mb-5 row align-items-center">
-                    <div class="col-4 col-sm-3">
-                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-1.jpg" alt="">
-                    </div>
-                    <div class="col-8 col-sm-9">
-                        <h4>Miriam ....</h4>
-                        <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mb-5 row align-items-center">
-                    <div class="col-4 col-sm-3">
-                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-2.jpg" alt="">
-                    </div>
-                    <div class="col-8 col-sm-9">
-                        <h4>Carlos ....</h4>
-                        <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+    
     <!-- About Fin -->
 
 
     <!-- Service Inicio -->
-    <div class="pt-5 container-fluid">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
-                <h1 class="display-4">Fresh & Organic Beans</h1>
-            </div>
-            <div class="row">
-                <div class="mb-5 col-lg-6">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-truck service-icon"></i>Fastest Door Delivery</h4>
-                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor
-                                sed est sit
-                                invidunt, dolore tempor diam ipsum takima erat tempor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-5 col-lg-6">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-coffee service-icon"></i>Fresh Coffee Beans</h4>
-                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor
-                                sed est sit
-                                invidunt, dolore tempor diam ipsum takima erat tempor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-5 col-lg-6">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-award service-icon"></i>Best Quality Coffee</h4>
-                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor
-                                sed est sit
-                                invidunt, dolore tempor diam ipsum takima erat tempor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-5 col-lg-6">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-4.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Online Table Booking</h4>
-                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor
-                                sed est sit
-                                invidunt, dolore tempor diam ipsum takima erat tempor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Service Fin -->
 
 
     <!-- Offer Inicio -->
-    <div class="py-5 my-5 text-center offer container-fluid position-relative overlay-top overlay-bottom">
-        <div class="container py-5">
-            <h1 class="mt-3 display-3 text-primary">50% OFF</h1>
-            <h1 class="mb-3 text-white">Sunday Special Offer</h1>
-            <h4 class="pb-3 mb-4 text-white font-weight-normal">Only for Sunday from 1st Jan to 30th Jan 2045</h4>
-            <form class="mb-4 form-inline justify-content-center">
-                <div class="input-group">
-                    <input type="text" class="p-4 form-control" placeholder="Your Email" style="height: 60px;">
-                    <div class="input-group-append">
-                        <button class="px-4 btn btn-primary font-weight-bold" type="submit">Sign Up</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+   
     <!-- Offer Fin -->
 
 
