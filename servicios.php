@@ -15,13 +15,13 @@
 
 
 <body>
-    <!-- Navbar Start -->
+    <!-- Navbar Inicio -->
     <?php include("./templates/header.php");
 ?>
-    <!-- Navbar End -->
+    <!-- Navbar Fin -->
 
 
-    <!-- Page Header Start -->
+    <!-- Page Header Inicio -->
     <div class="mb-5 container-fluid page-header position-relative overlay-bottom">
         <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 400px">
             <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Services</h1>
@@ -32,10 +32,10 @@
             </div>
         </div>
     </div>
-    <!-- Page Header End -->
+    <!-- Page Header Fin -->
 
 
-    <!-- Service Start -->
+    <!-- Servicios Inicio -->
     <div class="pt-5 container-fluid">
         <div class="container">
             <div class="section-title">
@@ -90,12 +90,12 @@
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Servicios Fin -->
 
 
-    <!-- Footer Start -->
+    <!-- Footer Inicio -->
     <?php include("./templates/footer.php");?>
-    <!-- Footer End -->
+    <!-- Footer Fin -->
 
 
     <!-- Back to Top -->

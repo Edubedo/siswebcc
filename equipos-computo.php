@@ -14,51 +14,26 @@
 </head>
 
 <body>
-    <!-- Navbar Start -->
-    <div class="p-0 container-fluid nav-bar">
-        <nav class="py-3 navbar navbar-expand-lg bg-none navbar-dark">
-            <a href="index.php" class="m-0 navbar-brand px-lg-4">
-                <h1 class="m-0 text-white display-4 text-uppercase">SPEC</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="p-4 ml-auto navbar-nav">
-                    <a href="index.php" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Service</a>
-                    <a href="menu.html" class="nav-item nav-link active">Menu</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.html" class="dropdown-item">Reservation</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
+    <!-- Navbar Inicio -->
+    <?php include("./templates/header.php");
+?>
+    <!-- Navbar Fin -->
 
-
-    <!-- Page Header Start -->
+    <!-- Page Header Inicio -->
     <div class="mb-5 container-fluid page-header position-relative overlay-bottom">
         <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 400px">
             <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Menu</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">P&aacute;gina Principal</a></p>
+                <p class="m-0 text-white"><a class="text-white" href="index.php">P&aacute;gina Principal</a></p>
                 <p class="px-2 m-0 text-white">/</p>
                 <p class="m-0 text-white">Menu</p>
             </div>
         </div>
     </div>
-    <!-- Page Header End -->
+    <!-- Page Header Fin -->
 
 
-    <!-- Menu Start -->
+    <!-- Menu Inicio -->
     <div class="pt-5 container-fluid">
         <div class="container">
             <div class="section-title">
@@ -137,12 +112,12 @@
             </div>
         </div>
     </div>
-    <!-- Menu End -->
+    <!-- Menu Fin -->
 
 
-    <!-- Footer Start -->
+    <!-- Footer Inicio -->
     <?php include("./templates/footer.php");?>
-    <!-- Footer End -->
+    <!-- Footer Fin -->
 
 
     <!-- Back to Top -->

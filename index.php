@@ -14,12 +14,12 @@
 </head>
 
 <body>
-    <!-- Navbar Start -->
+    <!-- Navbar Inicio -->
    <?php include("./templates/header.php");
 ?>
-    <!-- Navbar End -->
+    <!-- Navbar Fin -->
 
-    <!-- Carousel Start -->
+    <!-- Carousel Inicio -->
     <div class="p-0 mb-5 container-fluid">
         <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
             <div class="carousel-inner">
@@ -48,10 +48,10 @@
             </a>
         </div>
     </div>
-    <!-- Carousel End -->
+    <!-- Carousel Fin -->
 
 
-    <!-- About Start -->
+    <!-- About Inicio -->
     <div class="py-5 container-fluid">
         <div class="container">
             <div class="section-title">
@@ -84,10 +84,10 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- About Fin -->
 
 
-    <!-- Service Start -->
+    <!-- Servicios Inicio -->
     <div class="pt-5 container-fluid">
         <div class="container">
             <div class="section-title">
@@ -150,10 +150,10 @@
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Servicios Fin -->
 
 
-    <!-- Offer Start -->
+    <!-- Offer Inicio -->
     <div class="py-5 my-5 text-center offer container-fluid position-relative overlay-top overlay-bottom">
         <div class="container py-5">
             <h1 class="mt-3 display-3 text-primary">50% OFF</h1>
@@ -169,10 +169,10 @@
             </form>
         </div>
     </div>
-    <!-- Offer End -->
+    <!-- Offer Fin -->
 
 
-    <!-- Menu Start -->
+    <!-- Menu Inicio -->
     <div class="pt-5 container-fluid">
         <div class="container">
             <div class="section-title">
@@ -255,10 +255,10 @@
             </div>
         </div>
     </div>
-    <!-- Menu End -->
+    <!-- Menu Fin -->
 
 
-    <!-- Reservation Start -->
+    <!-- Reservation Inicio -->
     <div class="my-5 container-fluid">
         <div class="container">
             <div class="reservation position-relative overlay-top overlay-bottom">
@@ -331,10 +331,10 @@
             </div>
         </div>
     </div>
-    <!-- Reservation End -->
+    <!-- Reservation Fin -->
 
 
-    <!-- Testimonial Start -->
+    <!-- Testimonial Inicio -->
     <div class="py-5 container-fluid">
         <div class="container">
             <div class="section-title">
@@ -389,11 +389,11 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Testimonial Fin -->
 
 
-    <!-- Footer Start -->
-    <?php include("./templates/footer.php");?>    <!-- Footer End -->
+    <!-- Footer Inicio -->
+    <?php include("./templates/footer.php");?>    <!-- Footer Fin -->
 
 
     <!-- Back to Top -->

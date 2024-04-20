@@ -13,26 +13,26 @@
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar Start -->
+    <!-- Navbar Inicio -->
     <?php include("./templates/header.php");
 ?>
-    <!-- Navbar End -->
+    <!-- Navbar Fin -->
 
-    <!-- Page Header Start -->
+    <!-- Page Header Inicio -->
     <div class="mb-5 container-fluid page-header position-relative overlay-bottom">
         <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 400px">
             <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Apartado de Equipos</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">P&aacute;gina Principal</a></p>
+                <p class="m-0 text-white"><a class="text-white" href="index.php">P&aacute;gina Principal</a></p>
                 <p class="px-2 m-0 text-white">/</p>
                 <p class="m-0 text-white">Apartado de Equipos</p>
             </div>
         </div>
     </div>
-    <!-- Page Header End -->
+    <!-- Page Header Fin -->
 
 
-    <!-- Reservation Start -->
+    <!-- Reservation Inicio -->
     <div class="py-5 container-fluid">
         <div class="container">
             <div class="reservation position-relative overlay-top overlay-bottom">
@@ -95,12 +95,12 @@
             </div>
         </div>
     </div>
-    <!-- Reservation End -->
+    <!-- Reservation Fin -->
 
 
-    <!-- Footer Start -->
+    <!-- Footer Inicio -->
     <?php include("./templates/footer.php");?>
-    <!-- Footer End -->
+    <!-- Footer Fin -->
 
 
     <!-- Back to Top -->

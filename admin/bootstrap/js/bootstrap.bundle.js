@@ -5859,7 +5859,7 @@
   const ARROW_UP_KEY = 'ArrowUp';
   const ARROW_DOWN_KEY = 'ArrowDown';
   const HOME_KEY = 'Home';
-  const END_KEY = 'End';
+  const END_KEY = 'Fin';
   const CLASS_NAME_ACTIVE = 'active';
   const CLASS_NAME_FADE$1 = 'fade';
   const CLASS_NAME_SHOW$1 = 'show';
