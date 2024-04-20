@@ -8,74 +8,41 @@
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">SPEC</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Control de equipos de
-                            computo</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="prestamos.php" class="dropdown-item">Prestamos</a>
-                        </div>
-                    </div>
-                    <a href="about.html" class="nav-item nav-link">Empleados soporte</a>
-                    <a href="service.html" class="nav-item nav-link">Servicios</a>
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                    <a href="admin/login.php" class="nav-item nav-link">Administrador</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+   <?php     include("./templates/header.php");
+?>
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
+    <div class="p-0 mb-5 container-fluid">
         <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="w-100" src="img/udc.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-white font-weight-medium m-0">Sistema de control</h2>
-                        <h1 class="display-1 text-primary  m-0">CENTRO DE COMPUTO</h1>
-                        <h2 class="text-white m-0">Universidad de Colima</h2>
+                        <h2 class="m-0 text-white font-weight-medium">Sistema de control</h2>
+                        <h1 class="m-0 display-1 text-primary">CENTRO DE COMPUTO</h1>
+                        <h2 class="m-0 text-white">Universidad de Colima</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="img/UDC5.jfif" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-white font-weight-medium m-0">Sistema de control</h2>
-                        <h1 class="display-1 text-primary m-0">CENTRO DE COMPUTO</h1>
-                        <h2 class="text-white m-0">Universidad de Colima</h2>
+                        <h2 class="m-0 text-white font-weight-medium">Sistema de control</h2>
+                        <h1 class="m-0 display-1 text-primary">CENTRO DE COMPUTO</h1>
+                        <h2 class="m-0 text-white">Universidad de Colima</h2>
                     </div>
                 </div>
             </div>
@@ -91,16 +58,16 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="py-5 container-fluid">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sobre nosotros</h4>
                 <h1 class="display-4">Equipo de trabajo</h1>
             </div>
             <div class="col-lg-6">
-                <div class="row  align-items-center mb-5">
+                <div class="mb-5 row align-items-center">
                     <div class="col-4 col-sm-3">
-                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-1.jpg" alt="">
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Miriam ....</h4>
@@ -109,9 +76,9 @@
                     </div>
                 </div>
                 
-                <div class="row align-items-center mb-5">
+                <div class="mb-5 row align-items-center">
                     <div class="col-4 col-sm-3">
-                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-2.jpg" alt="">
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Carlos ....</h4>
@@ -127,17 +94,17 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid pt-5">
+    <div class="pt-5 container-fluid">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
                 <h1 class="display-4">Fresh & Organic Beans</h1>
             </div>
             <div class="row">
-                <div class="col-lg-6 mb-5">
+                <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-1.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-truck service-icon"></i>Fastest Door Delivery</h4>
@@ -147,10 +114,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-2.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-coffee service-icon"></i>Fresh Coffee Beans</h4>
@@ -160,10 +127,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-3.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-award service-icon"></i>Best Quality Coffee</h4>
@@ -173,10 +140,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
+                <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-4.jpg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/service-4.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-table service-icon"></i>Online Table Booking</h4>
@@ -193,16 +160,16 @@
 
 
     <!-- Offer Start -->
-    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
+    <div class="py-5 my-5 text-center offer container-fluid position-relative overlay-top overlay-bottom">
         <div class="container py-5">
-            <h1 class="display-3 text-primary mt-3">50% OFF</h1>
-            <h1 class="text-white mb-3">Sunday Special Offer</h1>
-            <h4 class="text-white font-weight-normal mb-4 pb-3">Only for Sunday from 1st Jan to 30th Jan 2045</h4>
-            <form class="form-inline justify-content-center mb-4">
+            <h1 class="mt-3 display-3 text-primary">50% OFF</h1>
+            <h1 class="mb-3 text-white">Sunday Special Offer</h1>
+            <h4 class="pb-3 mb-4 text-white font-weight-normal">Only for Sunday from 1st Jan to 30th Jan 2045</h4>
+            <form class="mb-4 form-inline justify-content-center">
                 <div class="input-group">
-                    <input type="text" class="form-control p-4" placeholder="Your Email" style="height: 60px;">
+                    <input type="text" class="p-4 form-control" placeholder="Your Email" style="height: 60px;">
                     <div class="input-group-append">
-                        <button class="btn btn-primary font-weight-bold px-4" type="submit">Sign Up</button>
+                        <button class="px-4 btn btn-primary font-weight-bold" type="submit">Sign Up</button>
                     </div>
                 </div>
             </form>
@@ -212,7 +179,7 @@
 
 
     <!-- Menu Start -->
-    <div class="container-fluid pt-5">
+    <div class="pt-5 container-fluid">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
@@ -221,9 +188,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h1 class="mb-5">Hot Coffee</h1>
-                    <div class="row align-items-center mb-5">
+                    <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                            <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-1.jpg" alt="">
                             <h5 class="menu-price">$5</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -232,9 +199,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                            <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-2.jpg" alt="">
                             <h5 class="menu-price">$7</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -243,9 +210,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                            <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-3.jpg" alt="">
                             <h5 class="menu-price">$9</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -257,9 +224,9 @@
                 </div>
                 <div class="col-lg-6">
                     <h1 class="mb-5">Cold Coffee</h1>
-                    <div class="row align-items-center mb-5">
+                    <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                            <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-1.jpg" alt="">
                             <h5 class="menu-price">$5</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -268,9 +235,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                            <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-2.jpg" alt="">
                             <h5 class="menu-price">$7</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -279,9 +246,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row align-items-center mb-5">
+                    <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                            <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/menu-3.jpg" alt="">
                             <h5 class="menu-price">$9</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -298,11 +265,11 @@
 
 
     <!-- Reservation Start -->
-    <div class="container-fluid my-5">
+    <div class="my-5 container-fluid">
         <div class="container">
             <div class="reservation position-relative overlay-top overlay-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 my-5 my-lg-0">
+                    <div class="my-5 col-lg-6 my-lg-0">
                         <div class="p-5">
                             <div class="mb-4">
                                 <h1 class="display-3 text-primary">30% OFF</h1>
@@ -312,44 +279,44 @@
                                 eos,
                                 ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea
                             </p>
-                            <ul class="list-inline text-white m-0">
-                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet
+                            <ul class="m-0 text-white list-inline">
+                                <li class="py-2"><i class="mr-3 fa fa-check text-primary"></i>Lorem ipsum dolor sit amet
                                 </li>
-                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet
+                                <li class="py-2"><i class="mr-3 fa fa-check text-primary"></i>Lorem ipsum dolor sit amet
                                 </li>
-                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet
+                                <li class="py-2"><i class="mr-3 fa fa-check text-primary"></i>Lorem ipsum dolor sit amet
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
-                            <h1 class="text-white mb-4 mt-5">Book Your Table</h1>
+                        <div class="p-5 text-center" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="mt-5 mb-4 text-white">Book Your Table</h1>
                             <form class="mb-5">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent border-primary p-4"
+                                    <input type="text" class="p-4 bg-transparent form-control border-primary"
                                         placeholder="Name" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent border-primary p-4"
+                                    <input type="email" class="p-4 bg-transparent form-control border-primary"
                                         placeholder="Email" required="required" />
                                 </div>
                                 <div class="form-group">
                                     <div class="date" id="date" data-target-input="nearest">
                                         <input type="text"
-                                            class="form-control bg-transparent border-primary p-4 datetimepicker-input"
+                                            class="p-4 bg-transparent form-control border-primary datetimepicker-input"
                                             placeholder="Date" data-target="#date" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="time" id="time" data-target-input="nearest">
                                         <input type="text"
-                                            class="form-control bg-transparent border-primary p-4 datetimepicker-input"
+                                            class="p-4 bg-transparent form-control border-primary datetimepicker-input"
                                             placeholder="Time" data-target="#time" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent border-primary px-4"
+                                    <select class="px-4 bg-transparent custom-select border-primary"
                                         style="height: 49px;">
                                         <option selected>Person</option>
                                         <option value="1">Person 1</option>
@@ -360,7 +327,7 @@
                                 </div>
 
                                 <div>
-                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Book
+                                    <button class="py-3 btn btn-primary btn-block font-weight-bold" type="submit">Book
                                         Now</button>
                                 </div>
                             </form>
@@ -374,7 +341,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <div class="py-5 container-fluid">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
@@ -382,7 +349,7 @@
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
+                    <div class="mb-3 d-flex align-items-center">
                         <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
@@ -393,7 +360,7 @@
                         Dolor tempor ipsum sanct clita</p>
                 </div>
                 <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
+                    <div class="mb-3 d-flex align-items-center">
                         <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
@@ -404,7 +371,7 @@
                         Dolor tempor ipsum sanct clita</p>
                 </div>
                 <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
+                    <div class="mb-3 d-flex align-items-center">
                         <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
@@ -415,7 +382,7 @@
                         Dolor tempor ipsum sanct clita</p>
                 </div>
                 <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
+                    <div class="mb-3 d-flex align-items-center">
                         <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
@@ -432,29 +399,29 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
-        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+    <div class="px-0 pt-5 mt-5 text-white container-fluid footer position-relative overlay-top">
+        <div class="pt-5 mx-0 mt-4 row px-sm-3 px-lg-5">
+            <div class="mb-5 col-lg-3 col-md-6">
+                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Get In Touch</h4>
+                <p><i class="mr-2 fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                <p><i class="mr-2 fa fa-phone-alt"></i>+012 345 67890</p>
+                <p class="m-0"><i class="mr-2 fa fa-envelope"></i>info@example.com</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+            <div class="mb-5 col-lg-3 col-md-6">
+                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Follow Us</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i
                             class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i
                             class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
+            <div class="mb-5 col-lg-3 col-md-6">
+                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Open Hours</h4>
                 <div>
                     <h6 class="text-white text-uppercase">Monday - Friday</h6>
                     <p>8.00 AM - 8.00 PM</p>
@@ -462,21 +429,21 @@
                     <p>2.00 PM - 8.00 PM</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
+            <div class="mb-5 col-lg-3 col-md-6">
+                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Newsletter</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                 <div class="w-100">
                     <div class="input-group">
                         <input type="text" class="form-control border-light" style="padding: 25px;"
                             placeholder="Your Email">
                         <div class="input-group-append">
-                            <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                            <button class="px-3 btn btn-primary font-weight-bold">Sign Up</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
+        <div class="py-4 mt-4 text-center text-white container-fluid border-top px-sm-3 px-md-5"
             style="border-color: rgba(256, 256, 256, .1) !important;">
             <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Domain</a>. All Rights
                 Reserved.</a></p>

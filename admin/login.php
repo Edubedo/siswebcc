@@ -199,7 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					</div>
 				</div>
 			</div>
-		<a href="../index.html" style="text-align:left">Volver al blog</a>
+		<a href="../index.php" style="text-align:left">Volver al blog</a>
 
 		</div>
 		</div>
