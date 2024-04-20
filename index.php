@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -21,7 +21,7 @@
 
 <body>
     <!-- Navbar Start -->
-   <?php     include("./templates/header.php");
+   <?php include("./templates/header.php");
 ?>
     <!-- Navbar End -->
 
@@ -399,59 +399,7 @@
 
 
     <!-- Footer Start -->
-    <div class="px-0 pt-5 mt-5 text-white container-fluid footer position-relative overlay-top">
-        <div class="pt-5 mx-0 mt-4 row px-sm-3 px-lg-5">
-            <div class="mb-5 col-lg-3 col-md-6">
-                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Get In Touch</h4>
-                <p><i class="mr-2 fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                <p><i class="mr-2 fa fa-phone-alt"></i>+012 345 67890</p>
-                <p class="m-0"><i class="mr-2 fa fa-envelope"></i>info@example.com</p>
-            </div>
-            <div class="mb-5 col-lg-3 col-md-6">
-                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Follow Us</h4>
-                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-                <div class="d-flex justify-content-start">
-                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="mb-5 col-lg-3 col-md-6">
-                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Open Hours</h4>
-                <div>
-                    <h6 class="text-white text-uppercase">Monday - Friday</h6>
-                    <p>8.00 AM - 8.00 PM</p>
-                    <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
-                    <p>2.00 PM - 8.00 PM</p>
-                </div>
-            </div>
-            <div class="mb-5 col-lg-3 col-md-6">
-                <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Newsletter</h4>
-                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;"
-                            placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="px-3 btn btn-primary font-weight-bold">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="py-4 mt-4 text-center text-white container-fluid border-top px-sm-3 px-md-5"
-            style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Domain</a>. All Rights
-                Reserved.</a></p>
-            <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="https://htmlcodex.com">HTML
-                    Codex</a></p>
-        </div>
-    </div>
-    <!-- Footer End -->
+    <?php include("./templates/footer.php");?>    <!-- Footer End -->
 
 
     <!-- Back to Top -->

@@ -5,7 +5,7 @@
     // $url_blog="http://localhost/siwebcc/"
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <title>Administrador del sitio web</title>
         <meta charset="utf-8" />

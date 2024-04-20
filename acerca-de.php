@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+<head>  
     <meta charset="utf-8">
-    <title>SIWEBCC | Prestamos de equipos de computo</title>
+    <title>SPEC - Coffee Shop HTML Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -22,26 +22,11 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <link href="css/style.min.css" rel="stylesheet">
-</head>     
-
-
+</head>
+ 
 <body>
-<?php 
-include("./admin/bd.php"); // We need to add the db
-
-if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
-    $sentencia=$conexion->prepare("DELETE FROM `tbl_historial_prestamos` WHERE ID=:ID"); // Prepare the query
-    $sentencia->bindParam(':ID', $_GET['txtID']);
-    $sentencia->execute();
-}
- $sentencia=$conexion->prepare("SELECT * FROM `tbl_historial_prestamos`");
- $sentencia->execute();
-    $lista_servicios=$sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
-     
-    include("../../templates/header.php");
-?>
-     <!-- Navbar Start -->
-     <?php include("./templates/header.php");
+   <!-- Navbar Start -->
+   <?php include("./templates/header.php");
 ?>
     <!-- Navbar End -->
 
@@ -49,69 +34,51 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     <!-- Page Header Start -->
     <div class="mb-5 container-fluid page-header position-relative overlay-bottom">
         <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 400px">
-            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Prestamos</h1>
+            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Acerca de Nosotros</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white"><a class="text-white" href="">P&aacute;gina Principal</a></p>
                 <p class="px-2 m-0 text-white">/</p>
-                <p class="m-0 text-white">Services</p>
+                <p class="m-0 text-white">Sobre nosotros</p>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
 
 
-    <!-- Prestamos Start -->
-    
-<div class="card">
-    <div class="card-header">
-    <a
-        name=""
-        id=""
-        class="btn btn-primary"
-        href="prestamos-crear.php"
-        role="button"
-        >Agregar registro</a
-    >
-        
+    <!-- About Start -->
+    <div class="py-5 container-fluid">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sobre los Encargados Del Centro de Computaci&oacute;n</h4>
+                <h1 class="display-4">Equipo de trabajo</h1>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-5 row align-items-center">
+                    <div class="col-4 col-sm-3">
+                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="logo udc.jpg" alt="">
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Miriam Silvestre</h4>
+                        <p class="m-0">Encargada del Centro de Computaci&oacute;n del Turno Matutino del Bachillerato 8.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mb-5 row align-items-center">
+                    <div class="col-4 col-sm-3">
+                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="logo udc.jpg" alt="">
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Carlos Barraza</h4>
+                        <p class="m-0">Auxiliar en Servicio del Centro de Computaci&oacute;n del Turno Vespertino del Bachillerato 9.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
-    <div class="card-body">
-    <div
-        class="table-responsive-sm"
-    >
-        <table
-            class="table"
-        > 
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Asunto</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Fecha  Creación</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Go through all records -->
-                <?php foreach($lista_servicios as $registro) {?>
-                    <tr class="">
-                    <td><?php echo $registro['ID'] ?></td>
-                    <td><?php echo $registro['s_asunto'] ?></td>
-                    <td><?php echo $registro['s_descripcion'] ?></td>
-                    <td><?php echo $registro['d_fecha_creacion'] ?></td>
-                    <td>
-           
-                        
-                    </td>
-                </tr>
-             
-               <?php } ?>
-              
-            </tbody>
-        </table>
-    </div>
-    
-    </div>
-</div>
-    <!-- Prestamos End -->
+    <!-- About End -->
 
 
     <!-- Footer Start -->

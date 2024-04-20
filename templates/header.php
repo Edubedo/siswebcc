@@ -16,9 +16,9 @@
                             <a href="prestamos.php" class="dropdown-item">Prestamos</a>
                         </div>
                     </div>
-                    <a href="about.html" class="nav-item nav-link">Empleados soporte</a>
-                    <a href="service.html" class="nav-item nav-link">Servicios</a>
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    <a href="acerca-de.php" class="nav-item nav-link">Empleados soporte</a>
+                    <a href="servicios.php" class="nav-item nav-link">Servicios</a>
+                    <a href="contacto.php" class="nav-item nav-link">Contacto</a>
                     <a href="admin/login.php" class="nav-item nav-link">Administrador</a>
                 </div>
             </div>
