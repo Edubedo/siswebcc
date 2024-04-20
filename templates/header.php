@@ -18,6 +18,7 @@
                     </div>
                     <a href="acerca-de.php" class="nav-item nav-link">Empleados soporte</a>
                     <a href="servicios.php" class="nav-item nav-link">Servicios</a>
+                    <a href="reseñas.php" class="nav-item nav-link">Reseñas</a>
                     <a href="contacto.php" class="nav-item nav-link">Contacto</a>
                     <a href="admin/login.php" class="nav-item nav-link">Administrador</a>
                 </div>
