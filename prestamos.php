@@ -48,7 +48,70 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     </div>
     <!-- Page Header Fin -->
 
-
+    
+<!-- Prestamos Inicio -->
+    <!-- <div class="py-5 container-fluid">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="my-5 col-lg-6 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">Utilizando tu Credencial Universitaria</h1>
+                                <h1 class="text-white">Tienes derecho al uso de los Equipos de computo.</h1>
+                            </div>
+                            <p class="text-white">El metodo de Apartado y/o Reservaci&oacute;n de Equipos de manera Presencial es utilizar tu Credencial Universitaria e ir al Centro de Computaci&oacute;n y preguntar si tienen algun Equipo disponible.</p>
+                            <ul class="m-0 text-white list-inline">
+                                <p class="text-white">El metodo de Apartado y/o Reservaci&oacute;n de Equipos de manera Virtual es registrarte en la parte de abajo utilizando tu Correo Institucional y llenar los Espacios que se te solicitan.</p>
+                                <ul class="m-0 text-white list-inline">
+                                    <h1 class="text-white">Indicaciones que debes seguir...</h1>
+                                <li class="py-2"><i class="mr-3 fa fa-check text-primary"></i>Utilizar los Equipos de manera coherente y cuidadosa.</li>
+                                <li class="py-2"><i class="mr-3 fa fa-check text-primary"></i>Unicamente puedes utilizar los Equipos dentro del horario establecido por el/la encargad@.</li>
+                                <li class="py-2"><i class="mr-3 fa fa-check text-primary"></i>En caso de algun imprevisto golpe o rayon hacia los equipos se le hara un llamado a que se haga responsable por las molestias ocasionadas hacia los equipos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5 text-center" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="mt-5 mb-4 text-white">Anota tu Informaci&oacute;n</h1>
+                            <form class="mb-5">
+                                <div class="form-group">
+                                    <input type="text" class="p-4 bg-transparent form-control border-primary" placeholder="Nombre"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="p-4 bg-transparent form-control border-primary" placeholder="Correo Institucional"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text" class="p-4 bg-transparent form-control border-primary datetimepicker-input" placeholder="Fecha" data-target="#date" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text" class="p-4 bg-transparent form-control border-primary datetimepicker-input" placeholder="Horario" data-target="#time" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="px-4 bg-transparent custom-select border-primary" style="height: 49px;">
+                                        <option selected>N&uacute;mero de Equipo</option>
+                                        <option value="1">Equipo 1</option>
+                                        <option value="2">Equipo 2</option>
+                                        <option value="3">Equipo 3</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <button class="py-3 btn btn-primary btn-block font-weight-bold" type="submit">Mandar Tu Informaci&oacute;n</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- Prestamos Inicio -->
     
 <div class="card">
