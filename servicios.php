@@ -24,11 +24,11 @@
     <!-- Page Header Inicio -->
     <div class="mb-5 container-fluid page-header position-relative overlay-bottom">
         <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 400px">
-            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Services</h1>
+            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">SERVICES</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 text-white"><a class="text-white" href="index.php">P&aacute;gina Principal</a></p>
                 <p class="px-2 m-0 text-white">/</p>
-                <p class="m-0 text-white">Services</p>
+                <p class="m-0 text-white">SERVICES</p>
             </div>
         </div>
     </div>
