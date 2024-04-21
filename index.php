@@ -15,38 +15,54 @@
 
 <body>
     <!-- Navbar Inicio -->
-   <?php include("./templates/header.php");
-?>
+    <?php include("./templates/header.php");
+    ?>
     <!-- Navbar Fin -->
 
     <!-- Carousel Inicio -->
-    <?php include("./templates/components/carousel.php");?>
+    <?php include("./templates/components/carousel.php"); ?>
 
     <!-- Carousel Fin -->
-  <!-- Servicios Inicio -->
-  <?php include("./templates/views/servicios.php");?>
+
+    <!-- Servicios Inicio -->
+    <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h4>
+        <?php include("./templates/views/servicios.php"); ?>
+    </div>
     <!-- Servicios Fin -->
 
-    
-    <!-- Reseñas Inicio -->
-    <?php include("./templates/views/resenas.php");?>
-    <!-- Reseñas Fin -->
 
 
-<!-- Equipos Computo Inicio -->
-<?php include("./templates/views/equipos-computo.php");?>
+    <!-- Equipos Computo Inicio -->
+    <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h4>
+        <?php include("./templates/views/equipos-computo.php"); ?>
+    </div>
     <!-- Equipos Computo Fin -->
 
-       <!-- Contacto Inicio -->
-       <?php include("./templates/views/contacto.php");?>
+    <!-- Contacto Inicio -->
+    <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contactanos</h4>
+        <?php include("./templates/views/contacto.php"); ?>
+    </div>
     <!-- Contacto Fin -->
 
- <!-- Empleados Inicio -->
- <?php include("./templates/views/empleados.php");?>
+    <!-- Empleados Inicio -->
+    <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h4>
+        <?php include("./templates/views/empleados.php"); ?>
+    </div>
     <!-- Empleados Fin -->
 
+    <!-- Comentarios Inicio -->
+    <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios</h4>
+        <?php include("./templates/views/comentarios.php"); ?>
+    </div>
+    <!-- Comentarios Fin -->
+
     <!-- Footer Inicio -->
-    <?php include("./templates/footer.php");?>    <!-- Footer Fin -->
+    <?php include("./templates/footer.php"); ?> <!-- Footer Fin -->
 
 
     <!-- Back to Top -->
@@ -54,8 +70,16 @@
 
 
     <!-- JavaScript Libraries -->
-       <?php include("./templates/librerias-js.php");?>
-
+    <?php include("./templates/librerias-js.php"); ?>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

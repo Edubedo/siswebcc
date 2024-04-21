@@ -1,8 +1,5 @@
 <div class="py-5 container-fluid">
         <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios </h4>
-            </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
