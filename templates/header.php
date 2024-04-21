@@ -3,7 +3,7 @@
             <a href="index.php" class="m-0 navbar-brand px-lg-4">
                 <h1 class="m-0 text-white display-4 text-uppercase">SISWEBCC</h1>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" name="Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">

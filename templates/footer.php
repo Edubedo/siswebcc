@@ -10,10 +10,10 @@
                 <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Aprende mas sobre nosotros</h4>
                 <p>Nuestro equipo de trabajo realizamos este Proyecto acerca de un sistema de Almacenamiento de Datos el cual brindara mayor eficacia y sobre todo mayor organizacion al prestar los equipos de computo a los estudiantes. </p>
                 <div class="d-flex justify-content-start">
-                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="https://twitter.com/udec_oficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Link al twitter de la Universidad de Colima" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="https://www.facebook.com/UdeC.oficial/?locale=es_LA" aria-label="Link al facebook de la Universidad de Colima" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mr-2 btn btn-lg btn-outline-light btn-lg-square" href="https://www.linkedin.com/school/udecoficial/" aria-label="Link al linkedin de la Universidad de Colima" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square"    href="https://www.instagram.com/udec.oficial/?hl=es"aria-label="Link al instagram de la Universidad de Colima"  target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="mb-5 col-lg-3 col-md-6">

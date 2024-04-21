@@ -18,10 +18,10 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+        <a class="carousel-control-prev" aria-label="Deslizar imagen de inicio hacia atras" href="#blog-carousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
-        <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+        <a class="carousel-control-next" aria-label="Deslizar imagen de inicio hacia delante"  href="#blog-carousel" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
