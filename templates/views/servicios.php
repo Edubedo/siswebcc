@@ -8,7 +8,7 @@
                 <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/impresora1.jpeg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/impresora1.jpeg" alt="Impresora 1"  width="200" height="200">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-truck service-icon"></i>Impresiones y copias</h4>
@@ -19,7 +19,7 @@
                 <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/dellroja1.jpeg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/dellroja1.jpeg" alt="Dell Roja"  width="200" height="200">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fas fa-print service-icon"></i>Prestamo de equipos de computo </h4>
@@ -30,7 +30,7 @@
                 <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/proyector1.jpeg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/proyector1.jpeg" alt="Proyector"  width="200" height="200">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-award service-icon"></i>Prestamo de proyectores</h4>
@@ -41,7 +41,7 @@
                 <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="mb-3 img-fluid mb-sm-0" src="img/bocina1.jpeg" alt="">
+                            <img class="mb-3 img-fluid mb-sm-0" src="img/bocina1.jpeg" alt="Bocina" width="200" height="200">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fas fa-volume up"></i>Prestamo de bocina</h4>

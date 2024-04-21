@@ -9,7 +9,7 @@
                     <h1 class="mb-5">Disponibles </h1>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Dell Roja">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Dell Roja" width="200" height="150">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -19,7 +19,7 @@
                     </div>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Lenovo Negra Opaco">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Lenovo Negra Opaco" width="200" height="150">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -29,7 +29,7 @@
                     </div>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Lenovo Color Negro">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Lenovo Color Negro" width="200" height="150">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -44,7 +44,7 @@
                     <h1 class="mb-5">No Disponibles / Reparaci&oacute;n</h1>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Huawei MateBook D15">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Huawei MateBook D15" width="200" height="150">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -55,7 +55,7 @@
 
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Acer Chromebook 315">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Acer Chromebook 315" width="200" height="150">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -66,7 +66,7 @@
 
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Microsoft Surface Pro 6">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Microsoft Surface Pro 6"  width="200" height="150">
                             
                         </div>
                         <div class="col-8 col-sm-9">

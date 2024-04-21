@@ -2,7 +2,7 @@
     <div id="blog-carousel" class="carousel slide " data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="img/udc.jpg" alt="Image">
+                <img class="w-100" src="img/udc.jpg" alt="Image"  width="200" height="150">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <h2 class="m-0 text-white font-weight-medium">Sistema de control</h2>
                     <h1 class="m-0 display-1 text-primary">CENTRO DE COMPUTO</h1>
@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="img/udc.jpg" alt="Image">
+                <img class="w-100" src="img/udc.jpg" alt="Image"  width="200" height="150">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <h2 class="m-0 text-white font-weight-medium">Sistema de control</h2>
                     <h1 class="m-0 display-1 text-primary">CENTRO DE COMPUTO</h1>
