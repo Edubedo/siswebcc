@@ -23,7 +23,7 @@
     <!-- Página Encabezado Inicio -->
     <div class="mb-5 container-fluid page-header position-relative">
 
-        <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5 pt-2" style="min-height: 200px">        InicioComentarios</h1>
+        <div class="pt-0 pt-2 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 200px">        InicioComentarios</h1>
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="index.php">Inicio</a></p>
                 <p class="px-2 m-0 text-white">/</p>
@@ -42,10 +42,6 @@
     <!-- Footer Inicio -->
     <?php include("./templates/footer.php");?>
     <!-- Footer Fin -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

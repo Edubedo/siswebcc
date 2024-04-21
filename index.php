@@ -64,11 +64,6 @@
     <!-- Footer Inicio -->
     <?php include("./templates/footer.php"); ?> <!-- Footer Fin -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
     <!-- JavaScript Libraries -->
     <?php include("./templates/librerias-js.php"); ?>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

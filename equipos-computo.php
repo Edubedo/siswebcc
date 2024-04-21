@@ -43,11 +43,6 @@
     <?php include("./templates/footer.php"); ?>
     <!-- Footer Fin -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
     <!-- JavaScript Libraries -->
     <?php include("./templates/librerias-js.php"); ?>
 
