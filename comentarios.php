@@ -23,7 +23,7 @@
     <!-- Página Encabezado Inicio -->
     <div class="mb-5 container-fluid page-header position-relative">
 
-        <div class="pt-0 d-flex flex-column align-items-center justify-content-center pt-lg-5 pt-2" style="min-height: 200px">            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Comentarios</h1>
+        <div class="pt-0 pt-2 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 200px">            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Comentarios</h1>
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="index.php">P&aacute;gina Principal</a></p>
                 <p class="px-2 m-0 text-white">/</p>
@@ -50,10 +50,8 @@
 
     <!-- JavaScript Libraries -->
        <?php include("./templates/librerias-js.php");?>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/tempusdominus/js/moment.min.js"></script>
         <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
