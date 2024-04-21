@@ -16,7 +16,7 @@
 
 <body>
     <?php
-    include("./admin/bd.php"); // We need to add the db
+    include("admin/bd.php"); // We need to add the db
 
     if (isset($_GET['txtID'])) { // If the key 'txtID' exists in the $_GET array
         $sentencia = $conexion->prepare("DELETE FROM `tbl_historial_prestamos` WHERE ID=:ID"); // Prepare the query
@@ -27,7 +27,6 @@
     $sentencia->execute();
     $lista_servicios = $sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
 
-    include("../../templates/header.php");
     ?>
     <!-- Navbar Inicio -->
     <?php include("./templates/header.php");
