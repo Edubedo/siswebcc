@@ -26,7 +26,7 @@
 
     <!-- Servicios Inicio -->
     <div class="section-title">
-        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h4>
+        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h2>
         <?php include("./templates/views/servicios.php"); ?>
     </div>
     <!-- Servicios Fin -->
@@ -35,28 +35,28 @@
 
     <!-- Equipos Computo Inicio -->
     <div class="section-title">
-        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h4>
+        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h2>
         <?php include("./templates/views/equipos-computo.php"); ?>
     </div>
     <!-- Equipos Computo Fin -->
 
     <!-- Contacto Inicio -->
     <div class="section-title">
-        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contactanos</h4>
+        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contactanos</h2>
         <?php include("./templates/views/contacto.php"); ?>
     </div>
     <!-- Contacto Fin -->
 
     <!-- Empleados Inicio -->
     <div class="section-title">
-        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h4>
+        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h2>
         <?php include("./templates/views/empleados.php"); ?>
     </div>
     <!-- Empleados Fin -->
 
     <!-- Comentarios Inicio -->
     <div class="section-title">
-        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios</h4>
+        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios</h2>
         <?php include("./templates/views/comentarios.php"); ?>
     </div>
     <!-- Comentarios Fin -->
