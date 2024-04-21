@@ -7,7 +7,7 @@
             <div class="col-lg-6">
                 <div class="mb-5 row align-items-center">
                     <div class="col-4 col-sm-3">
-                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="logo udc.jpg" alt="">
+                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/impresora.jpeg" alt="">
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Miriam Silvestre</h4>
@@ -18,7 +18,7 @@
                 
                 <div class="mb-5 row align-items-center">
                     <div class="col-4 col-sm-3">
-                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="logo udc.jpg" alt="">
+                        <img class="mb-3 w-100 rounded-circle mb-sm-0" src="img/impresora.jpeg" alt="">
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Carlos Barraza</h4>

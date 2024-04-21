@@ -9,7 +9,7 @@
                     <h1 class="mb-5">Disponibles </h1>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="dell roja.jpg" alt="">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Dell Roja">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -19,7 +19,7 @@
                     </div>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="lenovo negra opaco.jpg" alt="">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Lenovo Negra Opaco">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -29,7 +29,7 @@
                     </div>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="lenovo negra.jpg" alt="">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Lenovo Color Negro">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -39,11 +39,12 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <h1 class="mb-5">No Disponibles / Reparaci&oacute;n</h1>
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="laptop abierta 3.jpg" alt="">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Huawei MateBook D15">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -51,9 +52,10 @@
                             <p class="m-0">La laptop Huawei MateBook D15 es una opción moderna y sofisticada para usuarios que buscan estilo y rendimiento en un solo dispositivo</p>
                         </div>
                     </div>
+
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="compu abierta" alt="">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Laptop Acer Chromebook 315">
                             
                         </div>
                         <div class="col-8 col-sm-9">
@@ -61,9 +63,10 @@
                             <p class="m-0">La laptop Acer Chromebook 315 es una opción moderna y eficiente para aquellos que buscan simplicidad y rendimiento en un dispositivo portátil.</p>
                         </div>
                     </div>
+
                     <div class="mb-5 row align-items-center">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="compu blanca.jpg" alt="">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/impresora.jpeg" alt="Microsoft Surface Pro 6">
                             
                         </div>
                         <div class="col-8 col-sm-9">

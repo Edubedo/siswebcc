@@ -7,7 +7,7 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="" alt="">
+                        <img class="img-fluid" src="img/impresora.jpeg" alt="">
                         <div class="ml-3">
                             <h4>Mario Figueroa</h4>
                             <i>Estudiante 6B / Gymrat Natural? </i>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="" alt="">
+                        <img class="img-fluid" src="img/impresora.jpeg" alt="">
                         <div class="ml-3">
                             <h4>Alan Palomares</h4>
                             <i>Estudiante 6B / Dulcero Profesional</i>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="" alt="">
+                        <img class="img-fluid" src="img/impresora.jpeg" alt="">
                         <div class="ml-3">
                             <h4>Kevin Valdovinos</h4>
                             <i>Estudiante 6B / Racista de Medio Tiempo</i>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="" alt="">
+                        <img class="img-fluid" src="img/impresora.jpeg" alt="">
                         <div class="ml-3">
                             <h4>Eduardo Escobedo</h4>
                             <i>Estudiante 6B / Programador</i>
