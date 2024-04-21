@@ -1,13 +1,13 @@
 <div class="py-5 container-fluid">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reseñas </h4>
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios </h4>
                 <h1 class="display-4">Lo que piensan los Estudiantes</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="mario.jpeg" alt="">
+                        <img class="img-fluid" src="" alt="">
                         <div class="ml-3">
                             <h4>Mario Figueroa</h4>
                             <i>Estudiante 6B / Gymrat Natural? </i>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="alan.jpeg" alt="">
+                        <img class="img-fluid" src="" alt="">
                         <div class="ml-3">
                             <h4>Alan Palomares</h4>
                             <i>Estudiante 6B / Dulcero Profesional</i>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="kevin.jpeg" alt="">
+                        <img class="img-fluid" src="" alt="">
                         <div class="ml-3">
                             <h4>Kevin Valdovinos</h4>
                             <i>Estudiante 6B / Racista de Medio Tiempo</i>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mb-3 d-flex align-items-center">
-                        <img class="img-fluid" src="edu.jpeg" alt="">
+                        <img class="img-fluid" src="" alt="">
                         <div class="ml-3">
                             <h4>Eduardo Escobedo</h4>
                             <i>Estudiante 6B / Programador</i>
