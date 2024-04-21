@@ -40,9 +40,9 @@
         <div class="pt-0 pt-2 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 200px">
             <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Prestamos</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white"><a class="text-white" href="">Inicio</a></p>
                 <p class="px-2 m-0 text-white">/</p>
-                <p class="m-0 text-white">Services</p>
+                <p class="m-0 text-white">Prestamos</p>
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>SPEC | Sistema de prestamo de equipos de computo</title>
+    <title>Inicio | Sistema de prestamo de equipos de computo</title>
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->
@@ -72,8 +72,6 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="js/cardDeslizarElementos.js"></script>
-
-    
 </body>
 
 </html>

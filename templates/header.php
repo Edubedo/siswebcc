@@ -10,7 +10,7 @@
                 <div class="p-4 ml-auto navbar-nav">
                     <a href="index.php" class="nav-item nav-link active">Inicio</a>
                     <a href="prestamos.php" class="nav-item nav-link">Prestamos</a>
-                    <a href="empleados.php" class="nav-item nav-link">Empleados soporte</a>
+                    <a href="empleados.php" class="nav-item nav-link">Equipo de trabajo</a>
                     <a href="servicios.php" class="nav-item nav-link">Servicios</a>
                     <a href="equipos-computo.php" class="nav-item nav-link">Equipos de computo</a>
                     <a href="contacto.php" class="nav-item nav-link">Contacto</a>

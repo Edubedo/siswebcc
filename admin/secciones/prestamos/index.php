@@ -24,7 +24,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
      
     include("../../templates/header.php");
 ?>
-<h2>Listar historial de prestamos</h2>
+<h2>Prestamos</h2>
 
 
 <div class="card">
