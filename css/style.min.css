@@ -1421,6 +1421,8 @@ code {
 		margin-left: 91.66667%;
 	}
 }
+
+
 .form-control {
 	display: block;
 	width: 100%;
@@ -8427,6 +8429,7 @@ h6,
 }
 .overlay-top::before {
 	top: -1px;
+	background: url(../img/overlay-top.png);
 }
 .overlay-bottom::after {
 	bottom: -1px;

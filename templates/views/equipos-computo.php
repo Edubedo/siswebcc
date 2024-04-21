@@ -1,9 +1,5 @@
 <div class="pt-5 container-fluid">
         <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu de los Equipos</h4>
-                <h1 class="display-4">Equipos de Comput&oacute;</h1>
-            </div>
             <div class="row">
                 <div class="col-lg-6">
                     <h1 class="mb-5">Disponibles </h1>

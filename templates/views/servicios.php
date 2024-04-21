@@ -1,9 +1,5 @@
  <div class="pt-5 container-fluid">
         <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Nuestros servicios</h4>
-                <h1 class="display-4">Tipos de servicios</h1>
-            </div>
             <div class="row">
                 <div class="mb-5 col-lg-6">
                     <div class="row align-items-center">
