@@ -1,4 +1,4 @@
-<div class="px-0 pt-5 mt-5 text-white container-fluid footer position-relative overlay-top">
+<div class="px-0 pt-5 mt-5 text-white container-fluid footer position-relative ">
         <div class="pt-5 mx-0 mt-4 row px-sm-3 px-lg-5">
             <div class="mb-5 col-lg-3 col-md-6">
                 <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Datos Secundarios</h4>

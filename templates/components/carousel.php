@@ -1,5 +1,5 @@
 <div class="p-0 mb-5 container-fluid">
-    <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+    <div id="blog-carousel" class="carousel slide " data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="w-100" src="img/udc.jpg" alt="Image">
