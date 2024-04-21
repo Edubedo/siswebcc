@@ -7,7 +7,7 @@
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <!-- Rel Bootstrap -->
     <?php include("./templates/librerias-head.php"); ?>
     <!-- Estilos -->
