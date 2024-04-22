@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Servicios | Sistema de prestamo de equipos de computo</title>
+    <title>Política de Privacidad | Sistema de prestamo de equipos de computo</title>
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->
@@ -16,7 +16,7 @@
 
 <body>
     <!-- Navbar Inicio -->
-    <?php include("templates/header.php");
+    <?php include("./templates/header.php");
     ?>
     <!-- Navbar Fin -->
 
@@ -28,7 +28,7 @@
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="index.php">Inicio</a></p>
                 <p class="px-2 m-0 text-white">/</p>
-                <p class="m-0 text-white"><Table>Terminos y condiciones</Table></p>
+                <p class="m-0 text-white"><Table>Política de Privacidad</Table></p>
             </div>
         </div>
     </div>
@@ -49,4 +49,4 @@
 
 </body>
 
-</html> 
+</html>
