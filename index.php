@@ -24,42 +24,31 @@
 
     <!-- Carousel Fin -->
 
-    <!-- Servicios Inicio -->
-    <div class="section-title">
-        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h2>
-        <?php include("./templates/views/servicios.php"); ?>
-    </div>
-    <!-- Servicios Fin -->
+</section>
 
+ <!-- Servicios, Equipos de Computo, Contacto, Empleados, Comentarios Inicio -->
+<div class="section-title" style="background: linear-gradient(to right, #f6fbe4, #d4deb2);">
+    <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h2>
+    <?php include("./templates/views/servicios.php"); ?>
+</div>
+<div class="section-title" style="background: linear-gradient(to right, #f6fbe4, #d4deb2);">
+    <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h2>
+    <?php include("./templates/views/equipos-computo.php"); ?>
+</div>
+<div class="section-title" style="background: linear-gradient(to right, #f6fbe4, #d4deb2);">
+    <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contáctanos</h2>
+    <?php include("./templates/views/contacto.php"); ?>
+</div>
+<div class="section-title" style="background: linear-gradient(to right, #f6fbe4, #d4deb2);">
+    <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Empleados</h2>
+    <?php include("./templates/views/empleados.php"); ?>
+</div>
+<div class="section-title" style="background: linear-gradient(to right, #f6fbe4, #d4deb2);">
+    <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios</h2>
+    <?php include("./templates/views/comentarios.php"); ?>
+</div>
+<!-- Servicios, Equipos de Computo, Contacto, Empleados, Comentarios Fin -->
 
-
-    <!-- Equipos Computo Inicio -->
-    <div class="section-title">
-        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h2>
-        <?php include("./templates/views/equipos-computo.php"); ?>
-    </div>
-    <!-- Equipos Computo Fin -->
-
-    <!-- Contacto Inicio -->
-    <div class="section-title">
-        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contactanos</h2>
-        <?php include("./templates/views/contacto.php"); ?>
-    </div>
-    <!-- Contacto Fin -->
-
-    <!-- Empleados Inicio -->
-    <div class="section-title">
-        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h2>
-        <?php include("./templates/views/empleados.php"); ?>
-    </div>
-    <!-- Empleados Fin -->
-
-    <!-- Comentarios Inicio -->
-    <div class="section-title">
-        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios</h2>
-        <?php include("./templates/views/comentarios.php"); ?>
-    </div>
-    <!-- Comentarios Fin -->
 
     <!-- Footer Inicio -->
     <?php include("./templates/footer.php"); ?> <!-- Footer Fin -->

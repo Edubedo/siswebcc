@@ -12,7 +12,7 @@
 	--red: #dc3545;
 	--orange: #fd7e14;
 	--yellow: #ffc107;
-	--green: #28a745;
+	--green: #5d28a7;
 	--teal: #20c997;
 	--cyan: #17a2b8;
 	--white: #fff;
@@ -1903,34 +1903,34 @@ fieldset:disabled a.btn {
 	pointer-events: none;
 }
 .btn-primary {
-	color: #212529;
-	background-color: #da9f5b;
-	border-color: #da9f5b;
+	color: #ffffff;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-primary:hover {
-	color: #212529;
-	background-color: #d38d3c;
-	border-color: #d18731;
+	color: #ffffff;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-	color: #212529;
-	background-color: #d38d3c;
-	border-color: #d18731;
+	color: #ffffff;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 	box-shadow: 0 0 0 0.2rem rgba(190, 141, 84, 0.5);
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
-	color: #212529;
-	background-color: #da9f5b;
-	border-color: #da9f5b;
+	color: #ffffff;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
 	color: #fff;
-	background-color: #d18731;
-	border-color: #c8802d;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -1939,33 +1939,33 @@ fieldset:disabled a.btn {
 }
 .btn-secondary {
 	color: #fff;
-	background-color: #33211d;
-	border-color: #33211d;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-secondary:hover {
 	color: #fff;
-	background-color: #1b110f;
-	border-color: #120c0b;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-secondary:focus,
 .btn-secondary.focus {
 	color: #fff;
-	background-color: #1b110f;
-	border-color: #120c0b;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 	box-shadow: 0 0 0 0.2rem rgba(82, 66, 63, 0.5);
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
 	color: #fff;
-	background-color: #33211d;
-	border-color: #33211d;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
 	color: #fff;
-	background-color: #120c0b;
-	border-color: #0a0706;
+	background-color: #5f5ea3;
+	border-color: #5f5ea3;
 }
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled).active:focus,
@@ -8174,7 +8174,7 @@ button.bg-dark:focus {
 	color: #fff !important;
 }
 .text-primary {
-	color: #28a745 !important;
+	color: #CCDB94 !important;
 }
 a.text-primary:hover,
 a.text-primary:focus {
@@ -8419,7 +8419,7 @@ h6,
 }
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-	color: #da9f5b;
+	color: #5f5ea3;
 }
 .overlay-top::before,
 .overlay-bottom::after {
@@ -8443,7 +8443,7 @@ h6,
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(51, 33, 29, 0.7);
+	background: rgb(76 82 48 / 58%);
 	z-index: 1;
 }
 .section-title {
@@ -8459,7 +8459,7 @@ h6,
 	top: 0;
 	left: 50%;
 	margin-left: 1px;
-	background: #da9f5b;
+	background: #ffffff00;
 }
 .service-icon {
 	margin-right: 15px;
@@ -8470,8 +8470,8 @@ h6,
 	align-items: center;
 	justify-content: center;
 	border-radius: 45px;
-	color: #33211d;
-	background: #da9f5b;
+	color: #ffffff;
+	background: #5f5ea3;
 }
 .menu-price {
 	position: absolute;
@@ -8498,12 +8498,12 @@ h6,
 	width: 20px;
 	height: 20px;
 	border-radius: 20px;
-	background: #da9f5b;
+	background: #5f5ea3;
 	transition: 0.5s;
 }
 .testimonial-carousel .owl-dot.active {
 	width: 40px;
-	background: #33211d;
+	background: #dcc8f0;
 }
 .testimonial-carousel .owl-item img {
 	width: 80px;
@@ -8518,9 +8518,17 @@ h6,
 .page-header,
 .offer,
 .footer {
-	background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)),
+	background: linear-gradient(#333333, #333333),
 		black;
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.background-blur {
+    background-image: url(UDC1.jpg);
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
