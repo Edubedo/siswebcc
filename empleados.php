@@ -13,10 +13,12 @@
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navbar Inicio -->
-    <?php include("./templates/header.php");
+   <div class="p-0 container-fluid nav-bar">
+   <?php include("./templates/header.php");
     ?>
+   </div>
     <!-- Navbar Fin -->
 
 
@@ -36,12 +38,17 @@
 
 
     <!-- Empleados Inicio -->
-    <?php include("./templates/views/empleados.php"); ?>
+    <div class="flex-grow-1">
+        <?php include("./templates/views/empleados.php"); ?>
+    </div>
     <!-- Empleados Fin -->
 
 
     <!-- Footer Inicio -->
-    <?php include("./templates/footer.php"); ?>
+    <div class="mt-auto">
+        <?php include("./templates/footer.php"); ?>
+    </div>
+
     <!-- Footer Fin -->
 
     <!-- JavaScript Libraries -->

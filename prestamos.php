@@ -379,7 +379,7 @@
 </head>
 
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php
     include("./admin/bd.php");
 
@@ -394,8 +394,10 @@
 
     ?>
     <!-- Navbar Inicio -->
+    <div class="p-0 container-fluid nav-bar">
     <?php include("./templates/header.php");
     ?>
+    </div>
     <!-- Navbar Fin -->
 
 
@@ -412,7 +414,7 @@
         </div>
     </div>
     <!-- Página Encabezado Fin -->
-    <div class="card">
+    <div class="card flex-grow-1">
         <div class="card-header">
             <a name="" id="" class="btn btn-primary" href="prestamos-crear.php" role="button">Agregar registro</a>
 
