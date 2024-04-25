@@ -4,9 +4,9 @@
 
 Para comenzar a trabajar con este repositorio, sigue estos pasos:
 
-\```bash
+```bash
 git clone https://github.com/<usuario>/repositorio.git
-\```
+```
 
 ## Configuración de la Base de Datos
 
