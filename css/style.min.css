@@ -47,7 +47,9 @@ html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
+.pilin {
+	width: 100%;
+}
 
 article,
 aside,

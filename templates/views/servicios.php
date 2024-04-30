@@ -7,7 +7,7 @@
                             <img class="mb-3 img-fluid mb-sm-0" src="img/impresora1.jpeg" alt="Impresora 1"  width="200" height="200">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fa-truck service-icon"></i>Impresiones y copias</h4>
+                            <h4>Impresiones y copias</h4>
                             <p class="m-0">Tenemos impresiones y copias a color y blanco y negro , las impresiones a color tienen un costo de 2 pesos y blanco y negro tiene un costo de 1 peso.</p>
                         </div>
                     </div>
@@ -18,7 +18,7 @@
                             <img class="mb-3 img-fluid mb-sm-0" src="img/dellroja1.jpeg" alt="Dell Roja"  width="200" height="200">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fas fa-print service-icon"></i>Prestamo de equipos de computo </h4>
+                            <h4>Prestamo de equipos de computo </h4>
                             <p class="m-0">Tenemos equipos de computo para prestar siempre y cuando cuides el equipos</p>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <img class="mb-3 img-fluid mb-sm-0" src="img/proyector1.jpeg" alt="Proyector"  width="200" height="200">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fa-award service-icon"></i>Prestamo de proyectores</h4>
+                            <h4>Prestamo de proyectores</h4>
                             <p class="m-0">Pregunta por disponibilidad con el encargado</p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <img class="mb-3 img-fluid mb-sm-0" src="img/bocina1.jpeg" alt="Bocina" width="200" height="200">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fas fa-volume up"></i>Prestamo de bocina</h4>
+                            <h4>Prestamo de bocina</h4>
                             <p class="m-0">Pregunta por disponibilidad con el encargado</p>
                         </div>
                     </div>
