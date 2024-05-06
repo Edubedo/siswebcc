@@ -9,7 +9,7 @@
         <div class="mb-5 col-lg-4"> <!-- Cambiado de col-lg-3 a col-lg-4 -->
             <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Privacidad</h4>
             <a href="terminos-condiciones.php" class="text-white">Terminos y Condiciones</a><br>
-            <a href="ruta_privacidad" class="text-white">Política de Privacidad</a>
+            <a href="politica-privacidad.php" class="text-white">Aviso de Privacidad</a>
         </div>
         <div class="mb-5 col-lg-4"> <!-- Cambiado de col-lg-3 a col-lg-4 -->
             <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">¿Alguna duda?</h4>
