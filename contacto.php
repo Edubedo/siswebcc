@@ -15,7 +15,7 @@
         <link href="css/style.min.css" rel="stylesheet">
     </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navbar Inicio -->
     <?php include("./templates/header.php");
     ?>
@@ -38,12 +38,43 @@
 
 
     <!-- Contacto Inicio -->
-    <?php include("./templates/views/contacto.php"); ?>
+    <div class="flex-grow-1">
+        <?php include("./templates/views/contacto.php"); ?>
+        <?php
+// Dirección de correo electrónico del destinatario
+$destinatario = "siswebcc@gmail.com";
+
+// Asunto del correo
+$asunto = "Asunto del correo";
+
+// Mensaje del correo
+$mensaje = "Este es el cuerpo del correo electrónico.";
+
+// Cabeceras del correo
+$cabeceras = "From: correo_emisor@gmail.com" . "\r\n" .
+             "Reply-To: correo_emisor@gmail.com" . "\r\n" .
+             "X-Mailer: PHP/" . phpversion();
+
+// Envía el correo electrónico
+if(mail($destinatario, $asunto, $mensaje, $cabeceras)) {
+    echo "El correo electrónico ha sido enviado correctamente.";
+} else {
+    echo "Error al enviar el correo electrónico.";
+}
+?>
+    </div>
+
+    
+    
+
     <!-- Contacto Fin -->
 
 
     <!-- Footer Inicio -->
-    <?php include("./templates/footer.php"); ?>
+    <div class="mt-auto">
+        <?php include("./templates/footer.php"); ?>
+    </div>
+
     <!-- Footer Fin -->
 
 
