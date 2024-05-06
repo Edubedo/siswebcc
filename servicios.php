@@ -14,10 +14,13 @@
 </head>
 
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navbar Inicio -->
-    <?php include("./templates/header.php");
+    <div class>
+        <?php include("./templates/header.php");
     ?>
+    </div>
+
     <!-- Navbar Fin -->
 
 
@@ -35,13 +38,18 @@
     <!-- Página Encabezado Fin -->
 
     <!-- Servicios Inicio -->
-    <?php include("./templates/views/servicios.php"); ?>
+    <div class="flex-grow-1">
+        <?php include("./templates/views/servicios.php"); ?>
+    </div>
+
     <!-- Servicios Fin -->
 
 
 
     <!-- Footer Inicio -->
-    <?php include("./templates/footer.php"); ?>
+    <div class="mt-auto">
+        <?php include("./templates/footer.php"); ?>
+    </div>
     <!-- Footer Fin -->
 
     <!-- JavaScript Libraries -->

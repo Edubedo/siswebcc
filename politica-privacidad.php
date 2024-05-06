@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Equipos Computo | Sistema de prestamo de equipos de computo</title>
+    <title>Política de Privacidad | Sistema de prestamo de equipos de computo</title>
     <!-- Meta -->
     <?php include("./templates/etiquetas-meta.php"); ?>
     <!-- Icono -->
@@ -13,43 +13,35 @@
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <!-- Navbar Inicio -->
-    <div class="p-0 container-fluid nav-bar">
 
-        <?php include("./templates/header.php");
+<body>
+    <!-- Navbar Inicio -->
+    <?php include("./templates/header.php");
     ?>
-    </div>
     <!-- Navbar Fin -->
 
-    <!-- Página Encabezado Inicio -->
-    <div class="mb-5 container-fluid page-header position-relative">
 
+    <!-- Página Encabezado Inicio -->
+    <div class="mb-5 container-fluid page-header position-relative ">
         <div class="pt-0 pt-2 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 200px">
-            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Equipos de Computo</h1>
+            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Servicios</h1>
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="index.php">Inicio</a></p>
                 <p class="px-2 m-0 text-white">/</p>
-                <p class="m-0 text-white">Equipos de Computo</p>
+                <p class="m-0 text-white"><Table>Política de Privacidad</Table></p>
             </div>
         </div>
     </div>
     <!-- Página Encabezado Fin -->
 
+    <!-- Servicios Inicio -->
+    <?php include("./templates/views/servicios.php"); ?>
+    <!-- Servicios Fin -->
 
-    <!-- Equipos Computo Inicio -->
-    <div class="flex-grow-1">
-
-        <?php include("./templates/views/equipos-computo.php"); ?>
-    </div>
-    <!-- Equipos Computo Fin -->
 
 
     <!-- Footer Inicio -->
-    <div class="mt-auto">
-        
-        <?php include("./templates/footer.php"); ?>
-    </div>
+    <?php include("./templates/footer.php"); ?>
     <!-- Footer Fin -->
 
     <!-- JavaScript Libraries -->
