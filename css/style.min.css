@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
 	--blue: #007bff;
 	--indigo: #6610f2;
@@ -12,13 +7,13 @@
 	--red: #dc3545;
 	--orange: #fd7e14;
 	--yellow: #ffc107;
-	--green: #28a745;
-	--teal: #20c997;
+	--green: #005820;
+	--teal: #3f9e5f;
 	--cyan: #17a2b8;
 	--white: #fff;
 	--gray: #6c757d;
 	--gray-dark: #343a40;
-	--primary: #0ccb09;
+	--primary: #3f9e5f;
 	--secondary: ##33211D;
 	--success: #28a745;
 	--info: #17a2b8;
@@ -63,6 +58,9 @@ nav,
 section {
 	display: block;
 }
+
+
+
 body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
@@ -71,7 +69,6 @@ body {
 	line-height: 1.5;
 	color: #555;
 	text-align: left;
-	background-color: #fffbf2;
 }
 [tabindex='-1']:focus:not(:focus-visible) {
 	outline: 0 !important;
@@ -8520,8 +8517,7 @@ h6,
 .page-header,
 .offer,
 .footer {
-	background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)),
-		black;
+	background: #3f9e5f;
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
