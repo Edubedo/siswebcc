@@ -24,11 +24,11 @@
     <!-- Página Encabezado Inicio -->
     <div class="mb-5 container-fluid page-header position-relative ">
         <div class="pt-0 pt-2 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 200px">
-            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Aviso de Privacidad</h1>
+            <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Política de Privacidad</h1>
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="index.php">Inicio</a></p>
                 <p class="px-2 m-0 text-white">/</p>
-                <p class="m-0 text-white"><Table>Aviso de Privacidad</Table></p>
+                <p class="m-0 text-white">Política de Privacidad</p>
             </div>
         </div>
     </div>
