@@ -1,13 +1,21 @@
-Steps for work with this repository.
+# Guía de uso
 
-Instalación.
+## Instalación
 
-Clona el repositorio
+Para comenzar a trabajar con este repositorio, asegúrate de tener PHP instalado en tu sistema. Luego, sigue estos pasos:
 
-1. git clone https://github.com/
+```bash
+git clone https://github.com/Edubedo/siswebcc
+```
 
+## Configuración de la Base de Datos
 
-Creación de base de datos AppServ
-1. copia el archivo .db que está en el repositorio y pégalo en una conexión llamada website,puedes modificar la contraseña en el archivo connection
+Este proyecto utiliza una base de datos MySQL. Sigue los siguientes pasos para configurarla:
 
+1. **Crea el archivo `.env`**: Ubica el archivo `.env.example` dentro del repositorio y a partir de ese, crea el `.env`.
 
+---
+
+Esta guía te ayudará a comenzar a trabajar con el repositorio de manera eficiente. Si tienes alguna pregunta o problema, no dudes en contactarme.
+
+¡Feliz codificación! 🚀
