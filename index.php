@@ -59,7 +59,7 @@
         <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios</h2>
         <?php include("./templates/views/comentarios.php"); ?>
     </div>
-    <!-- Comentarios Fin -->
+    <!-- Comentarios Fin --> 
 
     <!-- Footer Inicio -->
     <?php include("./templates/footer.php"); ?> <!-- Footer Fin -->
