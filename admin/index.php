@@ -5,13 +5,9 @@ if (!isset($_SESSION['usuario'])) {
     header("Location: login.php");
     exit();
 }
- ?>
 
-<?php
-    $url_admin="http://localhost/siswebcc/admin/";
-    // $url_admin="http://localhost/siwebcc/admin/";
-    $url_blog="http://localhost/siswebcc/"
-    // $url_blog="http://localhost/siwebcc/"
+$url_admin="http://localhost/siswebcc/admin/";
+$url_blog="http://localhost/siswebcc/";
 ?>
 <!DOCTYPE html>
 <html lang="es"> 
@@ -53,7 +49,6 @@ if (!isset($_SESSION['usuario'])) {
 <!-- Página Encabezado Fin -->
 
 <div class="card flex-grow-1">
-       
     </div>
 
   <!-- Footer Inicio -->
