@@ -397,7 +397,7 @@
     <div class="p-0 container-fluid nav-bar">
     <?php include("./templates/header.php");
     ?>
-    </div>
+    </div> 
     <!-- Navbar Fin -->
 
 
