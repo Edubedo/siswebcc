@@ -76,7 +76,7 @@ if($_POST) {
 
 <!-- Listar Servicios -->
 <div class="card">
-    <div class="card-header">Crear servicio</div>
+    <h2 class="card-header">Formulario Servicio</h2>
     <div class="card-body">
     <form action="" enctype="multipart/form-data" method="post">
         <div class="mb-3">
@@ -94,6 +94,20 @@ if($_POST) {
 
 
         </div> 
+
+        <div class="mb-3">
+    <label for="imagen" class="form-label">Imagen</label>
+    <input
+        type="file"
+        class="form-control"
+        name="imagen"
+        id="imagen"
+        accept="image/*"
+        required="true"
+        onchange="previewImage(event)"
+    />
+    <img id="preview" src="" alt="Imagen de previsualización" style="max-width: 200px; margin-top: 10px;">
+</div>
 
         <div class="mb-3">
             <label for="titulo" class="form-label">Título</label>
@@ -146,6 +160,17 @@ if($_POST) {
     </div>
 </div>
     </div>
+
+    <script>
+        function previewImage(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+        var output = document.getElementById('preview');
+        output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+}
+    </script>
 
    <!-- Footer Inicio -->
    <?php include("../../../templates/footer.php"); ?>
