@@ -103,7 +103,7 @@ include("../../templates/header.php");
                             <?php endforeach; ?>
                         </select>
                     </div>
-
+ 
 
                     <div class="mb-3">
                         <label for="icono" class="form-label">URL Imagen</label>

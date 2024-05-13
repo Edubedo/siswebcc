@@ -8,7 +8,6 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="p-4 ml-auto navbar-nav">
-                    <a href="prestamos.php" class="nav-item nav-link">Prestamos</a>
                     <a href="empleados.php" class="nav-item nav-link">Equipo de trabajo</a>
                     <a href="servicios.php" class="nav-item nav-link">Servicios</a>
                     <a href="equipos-computo.php" class="nav-item nav-link">Equipos de computo</a>
