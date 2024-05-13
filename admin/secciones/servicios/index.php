@@ -28,7 +28,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 <!DOCTYPE html>
 <html lang="es"> 
     <head>
-        <title>Administrador siswebcc</title>
+        <title>Administrador compudc</title>
             <!-- Meta -->
         <?php include("./templates/etiquetas-meta.php"); ?>
             <!-- Icono -->
@@ -61,14 +61,14 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
        
     </div>
 </div>
+
 </div>
 <!-- Página Encabezado Fin -->
 
 <div class="card flex-grow-1">
 
+<!-- Listar Servicios -->
 <h2>Listar servicios</h2>
-
-
 <div class="card">
     <div class="card-header">
     <a
@@ -135,11 +135,10 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     
     </div>
 </div>
-
     </div>
 
-  <!-- Footer Inicio -->
-  <?php include("../../templates/footer.php"); ?>
+   <!-- Footer Inicio -->
+   <?php include("../../../templates/footer.php"); ?>
     <!-- Footer Fin -->
 
 <?php include("./templates/librerias-js.php"); ?>

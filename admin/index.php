@@ -6,13 +6,13 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 
-$url_admin="http://localhost/siswebcc/admin/";
-$url_blog="http://localhost/siswebcc/";
-?>
+$url_admin="http://localhost/compudc/admin/";
+$url_blog="http://localhost/compudc/";
+?> 
 <!DOCTYPE html>
 <html lang="es"> 
     <head>
-        <title>Administrador siswebcc</title>
+        <title>Administrador compudc</title>
             <!-- Meta -->
         <?php include("./templates/etiquetas-meta.php"); ?>
             <!-- Icono -->

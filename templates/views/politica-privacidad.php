@@ -5,7 +5,7 @@
             <div class="mb-5">
                 <h2>Fecha de última actualización: 06/05/2024</h2>
                 <p class="m-1">
-                    En SISWEBCC, valoramos y respetamos tu privacidad. Este aviso de privacidad tiene como objetivo informarte sobre cómo recopilamos, utilizamos, almacenamos y protegemos la información personal que nos proporcionas al utilizar nuestro blog.
+                    En COMPUDC, valoramos y respetamos tu privacidad. Este aviso de privacidad tiene como objetivo informarte sobre cómo recopilamos, utilizamos, almacenamos y protegemos la información personal que nos proporcionas al utilizar nuestro blog.
                 </p>
                 <ol class="m-1">
                     <li>
