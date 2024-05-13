@@ -15,6 +15,7 @@ $estatus = $query->fetchAll(PDO::FETCH_ASSOC);
 $queryUsuarios = $conexion->query("SELECT * FROM tbl_usuarios");
 $usuarios = $queryUsuarios->fetchAll(PDO::FETCH_ASSOC);
 
+
 if ($_POST) {
     $icono = (isset($_POST['icono'])) ? $_POST['icono'] : "";
     $titulo = (isset($_POST['titulo'])) ? $_POST['titulo'] : "";
@@ -23,16 +24,9 @@ if ($_POST) {
     $encargado = (isset($_POST['encargado'])) ? $_POST['encargado'] : "";
     $horario = (isset($_POST['horario'])) ? $_POST['horario'] : "";
 
-    echo $icono;
-    echo $titulo;
-    echo $descripcion;
-    echo $estatus;
-    echo $encargado;
-
     $sentencia = $conexion->prepare("INSERT INTO `tbl_servicios` (`ID`, `icono`, `titulo`, `descripcion`, `estado`, `responsable`, `horario`) 
-    VALUES (NULL, '$icono', '$titulo', '$descripcion', '$estatus', '$encargado', '$horario');");
+VALUES (NULL, '$icono', '$titulo', '$descripcion', '$estatus', '$encargado', '$horario');");
     $sentencia->execute();
-
     header("Location: index.php");
 }
 include("../../templates/header.php");
@@ -102,7 +96,7 @@ include("../../templates/header.php");
                     </div>
 
                     <div class="mb-3">
-                        <label for="encargado" class="form-label">Encargado</label>
+                        <label for="encargado" class="form-label">Responsable</label>
                         <select class="form-control" name="encargado" id="encargado" required="true">
                             <?php foreach ($usuarios as $usuario) : ?>
                                 <option value="<?php echo $usuario['nombre_completo']; ?>"><?php echo $usuario['nombre_completo']; ?></option>
@@ -112,17 +106,10 @@ include("../../templates/header.php");
 
 
                     <div class="mb-3">
-                        <label for="icono" class="form-label">Icono:</label>
-                        <input type="text" class="form-control" name="icono" id="icono" aria-describedby="helpId" placeholder="Icono" required="true" />
-
-
+                        <label for="icono" class="form-label">URL Imagen</label>
+                        <input type="text" class="form-control" name="icono" id="icono" aria-describedby="helpId" placeholder="URL Imagen" required="true" onchange="previewImage(event)"/>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="imagen" class="form-label">Imagen</label>
-                        <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*" required="true" onchange="previewImage(event)" />
-                        <img id="preview" src="" alt="Imagen de previsualización" style="max-width: 200px; margin-top: 10px;">
-                    </div>
 
 
                     <div class="mb-3">

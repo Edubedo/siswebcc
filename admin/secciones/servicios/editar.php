@@ -138,11 +138,10 @@ include("../../templates/header.php");
                     </div>
 
                     <div class="mb-3">
-                        <label for="icono" class="form-label">Icono:</label>
-                        <input type="text" class="form-control" name="icono" id="icono" aria-describedby="helpId" placeholder="Icono" value="<?php echo $icono; ?>" />
-                    </div>
+                        <label for="icono" class="form-label">URL Imagen</label>
+                        <input type="text" value="<?php echo $icono; ?>" class="form-control" name="icono" id="icono" aria-describedby="helpId" placeholder="URL Imagen" required="true" />                    </div>
 
-
+ 
                     <div class="mb-3">
                         <label for="estado" class="form-label">Estatus</label>
                         <select class="form-control" name="estado" id="estado" required="true">
@@ -172,17 +171,6 @@ include("../../templates/header.php");
             </div>
         </div>
     </div>
-
-    <script>
-        function previewImage(event) {
-            var reader = new FileReader();
-            reader.onload = function() {
-                var output = document.getElementById('preview');
-                output.src = reader.result;
-            }
-            reader.readAsDataURL(event.target.files[0]);
-        }
-    </script>
 
     <!-- Footer Inicio -->
     <?php include("../../../templates/footer.php"); ?>
