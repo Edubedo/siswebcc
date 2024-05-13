@@ -42,6 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $estado = $_POST['estado'];
     $horario = $_POST['horario'];
 
+    echo $estado;
+    
     $sentencia = $conexion->prepare("UPDATE `tbl_servicios` SET `icono`=:icono, `titulo`=:titulo, `descripcion`=:descripcion, `responsable`=:responsable, `estado`=:estado, `horario`=:horario WHERE `ID`=:ID");
     $sentencia->bindParam(':ID', $id);
     $sentencia->bindParam(':icono', $icono);
@@ -142,8 +144,8 @@ include("../../templates/header.php");
 
 
                     <div class="mb-3">
-                        <label for="estatus" class="form-label">Estatus</label>
-                        <select class="form-control" name="estatus" id="estatus" required="true">
+                        <label for="estado" class="form-label">Estatus</label>
+                        <select class="form-control" name="estado" id="estado" required="true">
                             <?php foreach ($estatus as $estado) : ?>
                                 <option value="<?php echo $estado['nombre']; ?>" <?php echo $estado['nombre'] == $estado_servicio ? 'selected' : ''; ?>>
                                     <?php echo $estado['nombre']; ?>
