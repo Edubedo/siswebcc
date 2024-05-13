@@ -109,7 +109,7 @@ include("../../templates/header.php");
     <div class="card flex-grow-1">
         <!-- Listar Servicios -->
         <div class="card">
-            <div class="card-header">Editar servicio</div>
+        <h2 class="card-header">Formulario Edición Servicio</h2>
             <div class="card-body">
                 <form action="" enctype="multipart/form-data" method="post">
                     <div>

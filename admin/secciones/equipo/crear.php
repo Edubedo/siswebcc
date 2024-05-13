@@ -23,7 +23,7 @@ if ($_POST) {
     // if the key '' exists in the $_POST array, then assign its value to $x, otherwise assign an empty string
     $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : "";
     $descripcion = (isset($_POST['descripcion'])) ? $_POST['descripcion'] : "";
-    $url_foto = (isset($_POST['url_foto'])) ? $_POST['url_foto'] : "";
+    $foto = (isset($_POST['foto'])) ? $_POST['foto'] : "";
     $puesto = (isset($_POST['puesto'])) ? $_POST['puesto'] : "";
     $responsable = (isset($_POST['responsable'])) ? $_POST['responsable'] : "";
     $tipo = (isset($_POST['tipo'])) ? $_POST['tipo'] : "";
@@ -32,8 +32,8 @@ if ($_POST) {
     $marca = (isset($_POST['marca'])) ? $_POST['marca'] : "";
     $modelo = (isset($_POST['modelo'])) ? $_POST['modelo'] : "";
 
-    $sentencia = $conexion->prepare("INSERT INTO `tbl_equipos_computo` (`ID`, `nombre`, `descripcion`, `url_foto`, `responsable`, `tipo`, `estado`, `marca`, `modelo`)  
-    VALUES (NULL, '$nombre', '$descripcion', '$url_foto', '$responsable', '$tipo', '$estado', '$marca', '$modelo')");
+    $sentencia = $conexion->prepare("INSERT INTO `tbl_equipos_computo` (`ID`, `nombre`, `descripcion`, `foto`, `responsable`, `tipo`, `estado`, `marca`, `modelo`)  
+    VALUES (NULL, '$nombre', '$descripcion', '$foto', '$responsable', '$tipo', '$estado', '$marca', '$modelo')");
 
 
 
@@ -138,8 +138,8 @@ include("../../templates/header.php");
 
 
                     <div class="mb-3">
-                        <label for="url_foto" class="form-label">URL Imagen</label>
-                        <input type="text" class="form-control" name="url_foto" id="url_foto" aria-describedby="helpId" placeholder="URL Imagen" required="true" onchange="previewImage(event)" />
+                        <label for="foto" class="form-label">URL Imagen</label>
+                        <input type="text" class="form-control" name="foto" id="foto" aria-describedby="helpId" placeholder="URL Imagen" required="true" onchange="previewImage(event)" />
                     </div>
 
 
