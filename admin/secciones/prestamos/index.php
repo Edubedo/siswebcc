@@ -81,14 +81,13 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 
 <!-- Listar Servicios -->
 
-<h2>Prestamos</h2>
-
 <div class="card">
     <div class="card-header">
     <a
         name=""
         id=""
-        class="btn btn-primary"
+        style="background-color: #3f9e57;color: white;"
+        class="btn"
         href="crear.php"
         role="button"
         >Agregar registro</a

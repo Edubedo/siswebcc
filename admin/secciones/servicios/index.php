@@ -78,7 +78,6 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 <div class="card flex-grow-1">
 
 <!-- Listar Servicios -->
-<h2>Listar servicios</h2>
 <div class="card">
     <div class="card-header">
     <a
