@@ -12,7 +12,7 @@
             <a href="politica-privacidad.php" class="text-white">Aviso de Privacidad</a>
         </div>
         <div class="mb-5 col-lg-4"> <!-- Cambiado de col-lg-3 a col-lg-4 -->
-            <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Redes sociales</h4>
+            <h4 class="mb-4 text-white text-uppercase" sty  le="letter-spacing: 3px;">Redes sociales</h4>
             <div class="w-100">
                 <a href="https://www.youtube.com/@UniversidaddeColimaTV" class="text-white nav-item nav-link"><i class="fab fa-youtube" style="color: red;"></i> Youtube</a>
                 <a href="https://www.facebook.com/UdeC.oficial/?locale=es_LA" class="text-white nav-item nav-link"><i class="fab fa-facebook-f" style="color: blue;"></i> Facebook</a>
