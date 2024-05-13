@@ -40,7 +40,7 @@ $url_blog="http://localhost/compudc/";
   <div class="mb-5 container-fluid page-header position-relative">
 
 <div class="pt-1 d-flex flex-column align-items-center justify-content-center pt-lg-5" style="min-height: 200px">
-    <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Bienvenido al modo administrador</h1>
+    <h1 class="mt-0 mb-3 text-white display-4 mt-lg-5 text-uppercase">Bienvenid@ al modo administrador</h1>
     <div class="d-inline-flex mb-lg-5">
        
     </div>
@@ -52,7 +52,7 @@ $url_blog="http://localhost/compudc/";
     </div>
 
   <!-- Footer Inicio -->
-  <?php include("../templates/footer.php"); ?>
+  <?php include("./templates/footer.php"); ?>
     <!-- Footer Fin -->
 
 <?php include("./templates/librerias-js.php"); ?>
