@@ -103,7 +103,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 <th scope="col">ID</th>
         <th scope="col">Titulo</th>
         <th scope="col">Descripción</th>
-        <th scope="col">Estatus</th>
+        <th scope="col">Estado</th>
         <th scope="col">Encargado</th>
         <th scope="col">Horario</th>
         <th scope="col">-</th>
