@@ -102,9 +102,10 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
             <thead>
                 <tr>
                     <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
                     <th scope="col">Usuario</th>
                     <th scope="col">Correo</th>
-                    <th scope="col">Contraseña</th>
+                    <th scope="col">Tipo</th>
                 </tr>
             </thead>
             <tbody>
@@ -112,9 +113,10 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 <?php foreach($lista_servicios as $registro) {?>
                     <tr class="">
                     <td><?php echo $registro['id'] ?></td>
+                    <td><?php echo $registro['nombre_completo'] ?></td>
                     <td><?php echo $registro['usuario'] ?></td>
                     <td><?php echo $registro['correo'] ?></td>
-                    <td>******</td>
+                    <td><?php echo $registro['tipo_usuario'] ?></td>
                     <td>
                     <a
                             name=""

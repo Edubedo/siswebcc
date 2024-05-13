@@ -42,6 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $estado = $_POST['estado'];
     $horario = $_POST['horario'];
 
+    echo $estado;
+    
     $sentencia = $conexion->prepare("UPDATE `tbl_servicios` SET `icono`=:icono, `titulo`=:titulo, `descripcion`=:descripcion, `responsable`=:responsable, `estado`=:estado, `horario`=:horario WHERE `ID`=:ID");
     $sentencia->bindParam(':ID', $id);
     $sentencia->bindParam(':icono', $icono);
@@ -107,7 +109,7 @@ include("../../templates/header.php");
     <div class="card flex-grow-1">
         <!-- Listar Servicios -->
         <div class="card">
-            <div class="card-header">Editar servicio</div>
+        <h2 class="card-header">Formulario Edición Servicio</h2>
             <div class="card-body">
                 <form action="" enctype="multipart/form-data" method="post">
                     <div>
@@ -136,14 +138,13 @@ include("../../templates/header.php");
                     </div>
 
                     <div class="mb-3">
-                        <label for="icono" class="form-label">Icono:</label>
-                        <input type="text" class="form-control" name="icono" id="icono" aria-describedby="helpId" placeholder="Icono" value="<?php echo $icono; ?>" />
-                    </div>
+                        <label for="icono" class="form-label">URL Imagen</label>
+                        <input type="text" value="<?php echo $icono; ?>" class="form-control" name="icono" id="icono" aria-describedby="helpId" placeholder="URL Imagen" required="true" />                    </div>
 
-
+ 
                     <div class="mb-3">
-                        <label for="estatus" class="form-label">Estatus</label>
-                        <select class="form-control" name="estatus" id="estatus" required="true">
+                        <label for="estado" class="form-label">Estatus</label>
+                        <select class="form-control" name="estado" id="estado" required="true">
                             <?php foreach ($estatus as $estado) : ?>
                                 <option value="<?php echo $estado['nombre']; ?>" <?php echo $estado['nombre'] == $estado_servicio ? 'selected' : ''; ?>>
                                     <?php echo $estado['nombre']; ?>
@@ -170,17 +171,6 @@ include("../../templates/header.php");
             </div>
         </div>
     </div>
-
-    <script>
-        function previewImage(event) {
-            var reader = new FileReader();
-            reader.onload = function() {
-                var output = document.getElementById('preview');
-                output.src = reader.result;
-            }
-            reader.readAsDataURL(event.target.files[0]);
-        }
-    </script>
 
     <!-- Footer Inicio -->
     <?php include("../../../templates/footer.php"); ?>

@@ -1,77 +1,76 @@
+<?php
+// Mostrar todos los errores
+error_reporting(E_ALL);
+
+// Mostrar todos los errores en tiempo de ejecución
+ini_set('display_errors', 1);
+
+include("./admin/bd.php"); // We need to add the db
+
+$sentencia_disponibles = $conexion->prepare("SELECT * FROM `tbl_equipos_computo` WHERE estado='Activo'");
+$sentencia_disponibles->execute();
+$lista_disponibles = $sentencia_disponibles->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
+
+$sentencia_no_disponibles = $conexion->prepare("SELECT * FROM `tbl_equipos_computo` WHERE estado!='Activo'");
+$sentencia_no_disponibles->execute();
+$lista_no_disponibles = $sentencia_no_disponibles->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
+?>
+
 <div class="pt-5 container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="mb-5 text-success">Disponibles </h3>
-                    <div class="mb-5 row align-items-center">
-                        <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/dell roja.jpg" alt="Laptop Dell Roja" width="200" height="150">
-                            
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Laptop Dell Roja</h4>
-                            <p class="m-0">La laptop Dell roja es un dispositivo llamativo que combina un diseño elegante con un rendimiento confiable.</p>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="mb-5 text-success">Disponibles </h3>
+                <?php $count = 0; foreach($lista_disponibles as $equipo): $count++; ?>
+                <div class="mb-5 row align-items-center equipo <?= $count > 3 ? 'hidden' : '' ?>">
+                    <div class="col-4 col-sm-3">
+                        <img class="mb-3 w-100 circle mb-sm-0" src="<?=$equipo['foto'] ?>" alt="<?= $equipo['nombre'] ?>" width="200" height="150">
                     </div>
-                    <div class="mb-5 row align-items-center">
-                        <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/lenovo negra opaco.jpg" alt="Laptop Lenovo Negra Opaco" width="200" height="150">
-                            
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Laptop Lenovo Negra Opaco</h4>
-                            <p class="m-0">La laptop Lenovo Negra Opaco es un dispositivo elegante y versátil, diseñado para ofrecer un rendimiento confiable en un formato compacto.  </p>
-                        </div>
-                    </div>
-                    <div class="mb-5 row align-items-center">
-                        <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/lenovo negra.jpg" alt="Laptop Lenovo Color Negro" width="200" height="150">
-                            
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Laptop Lenovo Color Negro</h4>
-                            <p class="m-0">
-                                La laptop Lenovo de color negro es una opción clásica y elegante para aquellos que buscan un dispositivo confiable y funcional. Con un diseño atemporal, esta laptop ofrece un equilibrio perfecto entre estilo y rendimiento. </p>
-                        </div>
+                    <div class="col-8 col-sm-9">
+                        <h4><?= $equipo['nombre'] ?></h4>
+                        <p class="m-0"><?= $equipo['descripcion'] ?></p>
                     </div>
                 </div>
+                <?php endforeach; ?>
+                <?php if($count > 3): ?>
+                <button class="btn btn-success ver-mas">Ver más</button>
+                <?php endif; ?>
+            </div>
 
-                <div class="col-lg-6">
-                    <h3 class="mb-5 text-danger">No Disponibles / Reparaci&oacute;n</h3>
-                    <div class="mb-5 row align-items-center">
-                        <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/mated15.jpg" alt="Laptop Huawei MateBook D15" width="200" height="150">
-                            
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Laptop Huawei MateBook D15</h4>
-                            <p class="m-0">La laptop Huawei MateBook D15 es una opción moderna y sofisticada para usuarios que buscan estilo y rendimiento en un solo dispositivo</p>
-                        </div>
+            <div class="col-lg-6">
+                <h3 class="mb-5 text-danger">No Disponibles / Reparaci&oacute;n</h3>
+                <?php $count = 0; foreach($lista_no_disponibles as $equipo): $count++; ?>
+                <div class="mb-5 row align-items-center equipo <?= $count > 3 ? 'hidden' : '' ?>">
+                    <div class="col-4 col-sm-3">
+                        <img class="mb-3 w-100 circle mb-sm-0" src="<?= $equipo['foto'] ?>" alt="<?= $equipo['nombre'] ?>" width="200" height="150">
                     </div>
-
-                    <div class="mb-5 row align-items-center">
-                        <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/acer15.jpg" alt="Laptop Acer Chromebook 315" width="200" height="150">
-                            
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Laptop Acer Chromebook 315</h4>
-                            <p class="m-0">La laptop Acer Chromebook 315 es una opción moderna y eficiente para aquellos que buscan simplicidad y rendimiento en un dispositivo portátil.</p>
-                        </div>
-                    </div>
-
-                    <div class="mb-5 row align-items-center">
-                        <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="img/surface pro 6.jpg" alt="Microsoft Surface Pro 6"  width="200" height="150">
-                            
-                        </div>
-                        <div class="col-8 col-sm-9">
-                            <h4>Microsoft Surface Pro 6</h4>
-                            <p class="m-0">
-                                La Microsoft Surface Pro 6 es una tablet convertible en laptop que combina elegancia y rendimiento en un dispositivo versátil. Con un diseño delgado y moderno, esta Surface Pro ofrece la portabilidad de una tablet con la potencia de una laptop.</p>
-                        </div>
+                    <div class="col-8 col-sm-9">
+                        <h4><?= $equipo['nombre'] ?></h4>
+                        <p class="m-0"><?= $equipo['descripcion'] ?></p>
                     </div>
                 </div>
+                <?php endforeach; ?>
+                <?php if($count > 3): ?>
+                <button class="btn btn-danger ver-mas">Ver más</button>
+                <?php endif; ?>
             </div>
         </div>
     </div>
+</div>
+
+<script>
+    document.querySelectorAll('.ver-mas').forEach(function(button) {
+        button.addEventListener('click', function() {
+            this.previousElementSibling.querySelectorAll('.equipo.hidden').forEach(function(equipo) {
+                equipo.classList.remove('hidden');
+            });
+            this.remove();
+        });
+    });
+</script>
+
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
