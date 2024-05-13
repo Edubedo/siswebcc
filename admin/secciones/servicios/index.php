@@ -45,6 +45,16 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
         <?php include("./templates/librerias-head.php"); ?>
 
         <link rel="stylesheet" href="../../../css/style.min.css">
+
+        <style>
+            .card {
+                margin: 1rem;
+            }
+
+            .card h2 {
+                padding: 1rem;
+            }
+        </style>
     </head>
    
 <body class="d-flex flex-column min-vh-100">
@@ -61,7 +71,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
        
     </div>
 </div>
-
+ 
 </div>
 <!-- Página Encabezado Fin -->
 
@@ -72,9 +82,10 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 <div class="card">
     <div class="card-header">
     <a
-        name=""
+        name="" 
         id=""
-        class="btn btn-primary"
+        class="btn"
+        style="background-color: #3f9e57;color: white;"
         href="crear.php"
         role="button"
         >Agregar registro</a
