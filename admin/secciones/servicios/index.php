@@ -28,7 +28,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 <!DOCTYPE html>
 <html lang="es"> 
     <head>
-        <title>Administrador siswebcc</title>
+        <title>Administrador compudc</title>
             <!-- Meta -->
         <?php include("./templates/etiquetas-meta.php"); ?>
             <!-- Icono -->
@@ -45,6 +45,16 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
         <?php include("./templates/librerias-head.php"); ?>
 
         <link rel="stylesheet" href="../../../css/style.min.css">
+
+        <style>
+            .card {
+                margin: 1rem;
+            }
+
+            .card h2 {
+                padding: 1rem;
+            }
+        </style>
     </head>
    
 <body class="d-flex flex-column min-vh-100">
@@ -61,20 +71,20 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
        
     </div>
 </div>
+ 
 </div>
 <!-- Página Encabezado Fin -->
 
 <div class="card flex-grow-1">
 
-<h2>Listar servicios</h2>
-
-
+<!-- Listar Servicios -->
 <div class="card">
     <div class="card-header">
     <a
-        name=""
+        name="" 
         id=""
-        class="btn btn-primary"
+        class="btn"
+        style="background-color: #3f9e57;color: white;"
         href="crear.php"
         role="button"
         >Agregar registro</a
@@ -90,11 +100,13 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
         > 
             <thead>
                 <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Iconos</th>
-                    <th scope="col">Titulo</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Acción</th>
+                <th scope="col">ID</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Encargado</th>
+        <th scope="col">Horario</th>
+        <th scope="col">-</th>
                 </tr>
             </thead>
             <tbody>
@@ -102,9 +114,11 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                 <?php foreach($lista_servicios as $registro) {?>
                     <tr class="">
                     <td><?php echo $registro['ID'] ?></td>
-                    <td><?php echo $registro['icono'] ?></td>
                     <td><?php echo $registro['titulo'] ?></td>
                     <td><?php echo $registro['descripcion'] ?></td>
+                    <td><?php echo $registro['estado'] ?></td>
+                    <td><?php echo $registro['responsable'] ?></td>
+                    <td><?php echo $registro['horario'] ?></td>
                     <td>
                     <a
                             name=""
@@ -135,11 +149,10 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     
     </div>
 </div>
-
     </div>
 
-  <!-- Footer Inicio -->
-  <?php include("../../templates/footer.php"); ?>
+   <!-- Footer Inicio -->
+   <?php include("../../../templates/footer.php"); ?>
     <!-- Footer Fin -->
 
 <?php include("./templates/librerias-js.php"); ?>

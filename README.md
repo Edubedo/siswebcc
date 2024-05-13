@@ -5,7 +5,7 @@
 Para comenzar a trabajar con este repositorio, asegúrate de tener PHP instalado en tu sistema. Luego, sigue estos pasos:
 
 ```bash
-git clone https://github.com/Edubedo/siswebcc
+git clone https://github.com/Edubedo/compudc
 ```
 
 ## Configuración de la Base de Datos

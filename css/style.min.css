@@ -8396,7 +8396,11 @@ h6,
 .nav-bar.container-md,
 .nav-bar.container-lg,
 .nav-bar.container-xl {
-	position: absolute;
+	position: relative;
+	background: #3f9e5f;
+	border-bottom: 3px solid transparent;
+	background-clip: padding-box; /* Para que el degradado no se extienda más allá del borde */
+	border-image-slice: 1;
 	z-index: 9;
 }
 @media (max-width: 991.98px) {
@@ -8406,7 +8410,14 @@ h6,
 	.nav-bar.container-lg,
 	.nav-bar.container-xl {
 		position: relative;
-		background: #33211d;
+		top: 0;
+		right: 0;
+		left: 0;
+		background: #3f9e5f;
+		border-bottom: 3px solid transparent;
+		background-clip: padding-box; /* Para que el degradado no se extienda más allá del borde */
+		border-image-slice: 1;
+		
 	}
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -8517,8 +8528,10 @@ h6,
 .page-header,
 .offer,
 .footer {
-	background: #3f9e5f;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #3f9e5f;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
