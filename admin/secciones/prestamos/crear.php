@@ -6,14 +6,32 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 include("../../bd.php");
+
+// Obtener los estatus de la tabla tbl_estatus
+$query = $conexion->query("SELECT * FROM tbl_estatus");
+$estatus = $query->fetchAll(PDO::FETCH_ASSOC);
+
+// Obtener los usuarios de la tabla tbl_usuarios
+$queryUsuarios = $conexion->query("SELECT * FROM tbl_usuarios");
+$usuarios = $queryUsuarios->fetchAll(PDO::FETCH_ASSOC);
+
+// Obtener los grados_grupo de la tabla tbl_grados_grupos
+$queryGradosGrupos = $conexion->query("SELECT * FROM tbl_grados_grupos");
+$gradosGrupos = $queryGradosGrupos->fetchAll(PDO::FETCH_ASSOC);
+
 if ($_POST) {
     // if the key '' exists in the $_POST array, then assign its value to $x, otherwise assign an empty string
     $icono = (isset($_POST['icono'])) ? $_POST['icono'] : "";
-    $titulo = (isset($_POST['titulo'])) ? $_POST['titulo'] : "";
+    $asunto = (isset($_POST['asunto'])) ? $_POST['asunto'] : "";
     $descripcion = (isset($_POST['descripcion'])) ? $_POST['descripcion'] : "";
+    $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : "";
+    $grado_grupo = (isset($_POST['grado_grupo'])) ? $_POST['grado_grupo'] : "";
+    $estado = (isset($_POST['estado'])) ? $_POST['estado'] : "";
+    $fecha_prestamo = (isset($_POST['fecha_prestamo'])) ? $_POST['fecha_prestamo'] : "";
+    $fecha_devolucion = (isset($_POST['fecha_devolucion'])) ? $_POST['fecha_devolucion'] : "";
 
-    $sentencia = $conexion->prepare("INSERT INTO `tbl_historial_prestamos` (`ID`, `ID_usuario`, `s_asunto`, `s_descripcion`, `d_fecha_creacion`) 
-    VALUES (NULL, '', '$ID_usuario', '$s_asunto', '');");
+    $sentencia = $conexion->prepare("INSERT INTO `tbl_historial_prestamos` (`ID`, `s_asunto`, `s_descripcion`, `d_fecha_creacion`, `nombre`, `grado_grupo`, `fecha_prestamo`, `fecha_devolucion`, `estado`)
+     VALUES (NULL, '$asunto', '$descripcion', CURRENT_TIMESTAMP, '$nombre', '$grado_grupo', '$fecha_prestamo', '$fecha_devolucion', '$estado');");
 
     $sentencia->execute();
 
@@ -76,13 +94,46 @@ include("../../templates/header.php");
             <div class="card-body">
                 <form action="" enctype="multipart/form-data" method="post">
                     <div class="mb-3">
-                        <label for="titulo" class="form-label">Título</label>
-                        <input type="text" class="form-control" name="titulo" id="titulo" aria-describedby="helpId" placeholder="Título" required="true" />
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" name="asunto" id="asunto" aria-describedby="helpId" placeholder="Asunto" required="true" />
                     </div>
 
                     <div class="mb-3">
                         <label for="descripcion" class="form-label">Descripción</label>
                         <input type="text" class="form-control" name="descripcion" id="descripcion" aria-describedby="helpId" placeholder="Descripción" required="true" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre del solicitante</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Descripción" required="true" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="grado_grupo" class="form-label">Grado y Grupo</label>
+                        <select class="form-control" name="grado_grupo" id="grado_grupo" required="true">
+                            <?php foreach ($gradosGrupos as $gragrup) : ?>
+                                <option value="<?php echo $gragrup['nombre']; ?>"><?php echo $gragrup['nombre']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="estado" class="form-label">Estado</label>
+                        <select class="form-control" name="estado" id="estado" required="true">
+                            <?php foreach ($estatus as $estado) : ?>
+                                <option value="<?php echo $estado['nombre']; ?>"><?php echo $estado['nombre']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fecha_prestamo" class="form-label">Fecha de prestamo</label>
+                        <input type="datetime-local" class="form-control" name="fecha_prestamo" id="fecha_prestamo" required="true">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fecha_devolucion" class="form-label">Fecha de devolución</label>
+                        <input type="datetime-local" class="form-control" name="fecha_devolucion" id="fecha_devolucion" required="true">
                     </div>
 
                     <div class="mb-3">
