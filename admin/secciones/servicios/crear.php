@@ -5,21 +5,37 @@ if (!isset($_SESSION['usuario'])) {
     header("Location: ../../login.php");
     exit();
 }
-    include("../../bd.php");
+include("../../bd.php");
+
+// Obtener los estatus de la tabla tbl_estatus
+$query = $conexion->query("SELECT * FROM tbl_estatus");
+$estatus = $query->fetchAll(PDO::FETCH_ASSOC);
+
+// Obtener los usuarios de la tabla tbl_usuarios
+$queryUsuarios = $conexion->query("SELECT * FROM tbl_usuarios");
+$usuarios = $queryUsuarios->fetchAll(PDO::FETCH_ASSOC);
+
 if($_POST) {
- // if the key '' exists in the $_POST array, then assign its value to $x, otherwise assign an empty string
     $icono = (isset($_POST['icono']))?$_POST['icono']:"";
     $titulo = (isset($_POST['titulo']))?$_POST['titulo']:"";
     $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
-
-    $sentencia=$conexion->prepare("INSERT INTO `tbl_servicios` (`ID`, `icono`, `titulo`, `descripcion`) 
-    VALUES (NULL, '$icono', '$titulo', '$descripcion');");
-
+    $estatus = (isset($_POST['estatus']))?$_POST['estatus']:"";
+    $encargado = (isset($_POST['encargado']))?$_POST['encargado']:"";
+    $horario = (isset($_POST['horario']))?$_POST['horario']:"";
+    
+    echo $icono;
+    echo $titulo;
+    echo $descripcion;
+    echo $estatus;
+    echo $encargado;
+    
+    $sentencia=$conexion->prepare("INSERT INTO `tbl_servicios` (`ID`, `icono`, `titulo`, `descripcion`, `estado`, `responsable`, `horario`) 
+    VALUES (NULL, '$icono', '$titulo', '$descripcion', '$estatus', '$encargado', '$horario');");
     $sentencia->execute();
  
     header("Location: index.php");
 }
-    include("../../templates/header.php");
+include("../../templates/header.php");
 ?>
 
 <!DOCTYPE html>
@@ -79,6 +95,44 @@ if($_POST) {
     <h2 class="card-header">Formulario Servicio</h2>
     <div class="card-body">
     <form action="" enctype="multipart/form-data" method="post">
+    <div class="mb-3">
+            <label for="titulo" class="form-label">Nombre</label>
+            <input
+                type="text"
+                class="form-control"
+                name="titulo"
+                id="titulo"
+                aria-describedby="helpId"
+                placeholder="Nombre"
+                required="true"
+
+                />
+        </div>
+        
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input
+                type="text"
+                class="form-control"
+                name="descripcion"
+                id="descripcion"
+                aria-describedby="helpId"
+                placeholder="Descripción"
+                required="true"
+
+            />
+        </div>
+
+        <div class="mb-3">
+    <label for="encargado" class="form-label">Encargado</label>
+    <select class="form-control" name="encargado" id="encargado" required="true">
+        <?php foreach($usuarios as $usuario): ?>
+            <option value="<?php echo $usuario['nombre_completo']; ?>"><?php echo $usuario['nombre_completo']; ?></option>
+        <?php endforeach; ?>
+    </select>
+</div>
+
+
         <div class="mb-3">
             <label for="icono" class="form-label">Icono:</label>
             <input
@@ -109,34 +163,21 @@ if($_POST) {
     <img id="preview" src="" alt="Imagen de previsualización" style="max-width: 200px; margin-top: 10px;">
 </div>
 
-        <div class="mb-3">
-            <label for="titulo" class="form-label">Título</label>
-            <input
-                type="text"
-                class="form-control"
-                name="titulo"
-                id="titulo"
-                aria-describedby="helpId"
-                placeholder="Título"
-                required="true"
 
-                />
-        </div>
-        
-        <div class="mb-3">
-            <label for="descripcion" class="form-label">Descripción</label>
-            <input
-                type="text"
-                class="form-control"
-                name="descripcion"
-                id="descripcion"
-                aria-describedby="helpId"
-                placeholder="Descripción"
-                required="true"
+<div class="mb-3">
+    <label for="estatus" class="form-label">Estatus</label>
+    <select class="form-control" name="estatus" id="estatus" required="true">
+        <?php foreach($estatus as $estado): ?>
+            <option value="<?php echo $estado['nombre']; ?>"><?php echo $estado['nombre']; ?></option>
+        <?php endforeach; ?>
+    </select>
+</div>
 
-            />
-        </div>
-
+<div class="mb-3">
+    <label for="horario" class="form-label">Horario</label>
+    <input type="datetime-local" class="form-control" name="horario" id="horario" required="true">
+</div>
+      
     <button
         type="submit"
         class="btn btn-success"
