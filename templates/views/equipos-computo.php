@@ -1,10 +1,4 @@
 <?php
-// Mostrar todos los errores
-error_reporting(E_ALL);
-
-// Mostrar todos los errores en tiempo de ejecución
-ini_set('display_errors', 1);
-
 include("./admin/bd.php"); // We need to add the db
 
 $sentencia_disponibles = $conexion->prepare("SELECT * FROM `tbl_equipos_computo` WHERE estado='Activo'");

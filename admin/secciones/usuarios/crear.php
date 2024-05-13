@@ -20,9 +20,10 @@ if ($_POST) {
     $password = (isset($_POST['password'])) ? $_POST['password'] : "";
     $tipo_usuario = (isset($_POST['tipo_usuario'])) ? $_POST['tipo_usuario'] : "";
     $nombre_completo = (isset($_POST['nombre_completo'])) ? $_POST['nombre_completo'] : "";
+    $foto = (isset($_POST['foto'])) ? $_POST['foto'] : "";
 
-    $sentencia = $conexion->prepare("INSERT INTO `tbl_usuarios` (`ID`, `usuario`, `password`, `correo`, `tipo_usuario`, `nombre_completo`) 
-    VALUES (NULL, '$usuario', '$password', '$correo', '$tipo_usuario', '$nombre_completo');");
+    $sentencia = $conexion->prepare("INSERT INTO `tbl_usuarios` (`ID`, `usuario`, `password`, `correo`, `tipo_usuario`, `nombre_completo`, `foto`) 
+    VALUES (NULL, '$usuario', '$password', '$correo', '$tipo_usuario', '$nombre_completo', '$foto');");
 
     $sentencia->execute();
 
@@ -93,7 +94,7 @@ include("../../templates/header.php");
 
                     <div class="mb-3">
                         <label for="nombre_completo" class="form-label">Nombre Completo:</label>
-                        <input type="text" class="form-control" name="nombre_completo" id="nombre_completo" aria-describedby="helpId" placeholder="Usuario" required="true" />
+                        <input type="text" class="form-control" name="nombre_completo" id="nombre_completo" aria-describedby="helpId" placeholder="Nombre Completo" required="true" />
                     </div>
 
                     <div class="mb-3">
@@ -109,7 +110,11 @@ include("../../templates/header.php");
                         </select>
                     </div>
 
-
+                    <div class="mb-3">
+                        <label for="foto" class="form-label">URL Imagen</label>
+                        <input type="text" class="form-control" name="foto" id="foto" aria-describedby="helpId" placeholder="URL Imagen" required="true" onchange="previewImage(event)" />
+                    </div>
+                    
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña:</label>
                         <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="Contraseña" required="true" />
