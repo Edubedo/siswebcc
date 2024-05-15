@@ -15,13 +15,16 @@ $estatus = $query->fetchAll(PDO::FETCH_ASSOC);
 $queryUsuarios = $conexion->query("SELECT * FROM tbl_usuarios");
 $usuarios = $queryUsuarios->fetchAll(PDO::FETCH_ASSOC);
 
-// Obtener los grados_grupo de la tabla tbl_grados_grupos
+// Obtener los grados_grupo de la tabla tbl_grados_grupos 
 $queryGradosGrupos = $conexion->query("SELECT * FROM tbl_grados_grupos");
 $gradosGrupos = $queryGradosGrupos->fetchAll(PDO::FETCH_ASSOC);
 
+// Obtener los equipos de computo de la tabla tbl_tipo_equipo_computo 
+$queryEquiposComputo = $conexion->query("SELECT * FROM tbl_equipos_computo");
+$equiposComputo = $queryEquiposComputo->fetchAll(PDO::FETCH_ASSOC);
+
 if ($_POST) {
     // if the key '' exists in the $_POST array, then assign its value to $x, otherwise assign an empty string
-    $icono = (isset($_POST['icono'])) ? $_POST['icono'] : "";
     $asunto = (isset($_POST['asunto'])) ? $_POST['asunto'] : "";
     $descripcion = (isset($_POST['descripcion'])) ? $_POST['descripcion'] : "";
     $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : "";
@@ -118,14 +121,23 @@ include("../../templates/header.php");
                     </div>
 
                     <div class="mb-3">
+                        <label for="equipo_computo" class="form-label">Equipo de computo</label>
+                        <select class="form-control" name="equipo_computo" id="equipo_computo" required="true">
+                            <?php foreach ($equiposComputo as $equipo_computo) : ?>
+                                <option value="<?php echo $equipo_computo['nombre']; ?>"><?php echo $equipo_computo['nombre']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
                         <label for="estado" class="form-label">Estado</label>
                         <select class="form-control" name="estado" id="estado" required="true">
                             <?php foreach ($estatus as $estado) : ?>
                                 <option value="<?php echo $estado['nombre']; ?>"><?php echo $estado['nombre']; ?></option>
                             <?php endforeach; ?>
                         </select>
-                    </div>
-
+                    </div> 
+                    
                     <div class="mb-3">
                         <label for="fecha_prestamo" class="form-label">Fecha de prestamo</label>
                         <input type="datetime-local" class="form-control" name="fecha_prestamo" id="fecha_prestamo" required="true">
@@ -134,13 +146,6 @@ include("../../templates/header.php");
                     <div class="mb-3">
                         <label for="fecha_devolucion" class="form-label">Fecha de devolución</label>
                         <input type="datetime-local" class="form-control" name="fecha_devolucion" id="fecha_devolucion" required="true">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="icono" class="form-label">Icono:</label>
-                        <input type="text" class="form-control" name="icono" id="icono" aria-describedby="helpId" placeholder="Icono" required="true" />
-
-
                     </div>
 
                     <button type="submit" class="btn btn-success">

@@ -147,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="container">
 				<div>
                 <div class="top-header">
-					<h1>Siwebcc</h1>
+					<h1>COMPUDC</h1>
 					<h2>Iniciar Sesion</h2>
 				</div>
                 

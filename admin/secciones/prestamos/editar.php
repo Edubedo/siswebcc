@@ -19,6 +19,9 @@ $usuarios = $queryUsuarios->fetchAll(PDO::FETCH_ASSOC);
 $queryGradosGrupos = $conexion->query("SELECT * FROM tbl_grados_grupos");
 $gradosGrupos = $queryGradosGrupos->fetchAll(PDO::FETCH_ASSOC);
 
+// Obtener los equipos de computo de la tabla tbl_tipo_equipo_computo 
+$queryEquiposComputo = $conexion->query("SELECT * FROM tbl_equipos_computo");
+$equiposComputo = $queryEquiposComputo->fetchAll(PDO::FETCH_ASSOC);
 
 $id = $imagen = $nombrecompleto = $puesto = $twiter = $facebook = $linkedin = '';
 
@@ -39,35 +42,40 @@ if (isset($_GET['txtID'])) { // If the key 'txtID' exists in the $_GET array
     $fecha_prestamo = $registro['fecha_prestamo'];
     $fecha_devolucion = $registro['fecha_devolucion'];
     $estado = $registro['estado'];
+    $equipo_computo = $registro['equipo_computo'];
 
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['txtID'];
-    $nombre = $_POST['titulo'];
+    $s_asunto = $_POST['s_asunto'];
+    $nombre = $_POST['nombre'];
     $estado_servicio = $_POST['estado'];
     $responsable = $_POST['responsable'];
     $tipo = $_POST['tipo'];
     $grado_grupo = $_POST['grad$grado_grupo'];
     $marca = $_POST['marca'];
+    $equipo_computo = $_POST['equipo_computo'];
     $modelo = $_POST['modelo'];
     $descripcion = $_POST['descripcion'];
     $foto = $_POST['foto'];
  
 
-    $sentencia = $conexion->prepare("UPDATE `tbl_historial_prestamos` SET `nombre`=:nombre, `descripcion`=:descripcion, `foto`=:foto, `responsable`=:responsable, `tipo`=:tipo, `estado`=:estado, `marca`=:marca, `modelo`=:modelo WHERE `ID`=:ID");
+    $sentencia = $conexion->prepare("UPDATE `tbl_historial_prestamos` 
+    SET `s_asunto`=:s_asunto,`nombre`=:nombre, `descripcion`=:descripcion, `tipo`=:tipo, `estado`=:estado, `marca`=:marca, `modelo`=:modelo, `equipo_computo`=:equipo_computo  
+    WHERE `ID`=:ID");
     $sentencia->bindParam(':nombre', $nombre);
+    $sentencia->bindParam(':s_asunto', $s_asunto);
     $sentencia->bindParam(':estado', $estado_servicio);
-    $sentencia->bindParam(':responsable', $responsable);
     $sentencia->bindParam(':tipo', $tipo);
     $sentencia->bindParam(':marca', $marca);
     $sentencia->bindParam(':modelo', $modelo);
     $sentencia->bindParam(':descripcion', $descripcion);
-    $sentencia->bindParam(':foto', $foto);
+    $sentencia->bindParam(':equipo_computo', $equipo_computo);
     $sentencia->bindParam(':ID', $id);
     $sentencia->execute();
 
-    header("Location: index.php"); // Redirect to the index page after successful update
+    header("Location: index.php"); 
 }
 
 include("../../templates/header.php");
@@ -156,27 +164,17 @@ include("../../templates/header.php");
                     </div>
 
                     <div class="mb-3">
-                        <label for="responsable" class="form-label">Responsable</label>
-                        <select class="form-control" name="responsable" id="responsable" required="true">
-                            <?php foreach ($usuarios as $usuario) : ?>
-                                <option value="<?php echo $usuario['nombre_completo']; ?>" <?php echo $usuario['nombre_completo'] == $responsable ? 'selected' : ''; ?>>
-                                    <?php echo $usuario['nombre_completo']; ?>
-                                </option>
+                        <label for="equipo_computo" class="form-label">Equipo de computo</label>
+                        <select class="form-control" name="equipo_computo" id="equipo_computo" required="true">
+                            <?php foreach ($equiposComputo as $equipo_computo) : ?>
+                                <option value="<?php echo $equipo_computo['nombre']; ?>"><?php echo $equipo_computo['nombre']; ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>
 
 
-
                     <div class="mb-3">
-                        <label for="foto" class="form-label">URL Imagen</label>
-                        <input type="text" value="<?php echo $foto; ?>" class="form-control" name="foto" id="foto" aria-describedby="helpId" placeholder="URL Imagen" required="true" onchange="previewImage(event)" />
-                    </div>
-
-
-
-                    <div class="mb-3">
-                        <label for="estado" class="form-label">Estatus</label>
+                        <label for="estado" class="form-label">Estado</label>
                         <select class="form-control" name="estado" id="estado" required="true">
                             <?php foreach ($estatus as $estado) : ?>
                                 <option value="<?php echo $estado['nombre']; ?>" <?php echo $estado['nombre'] == $estado_servicio ? 'selected' : ''; ?>>
@@ -186,7 +184,16 @@ include("../../templates/header.php");
                         </select>
                     </div>
 
-                    <button type="submit" class="btn btn-success">
+                    <div class="mb-3">
+                        <label for="fecha_prestamo" class="form-label">Fecha de prestamo</label>
+                        <input type="datetime-local" class="form-control" name="fecha_prestamo" id="fecha_prestamo" required="true" value="<?php echo $fecha_prestamo; ?>">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fecha_devolucion" class="form-label">Fecha de devolución</label>
+                        <input type="datetime-local" class="form-control" name="fecha_devolucion" id="fecha_devolucion" required="true" value="<?php echo $fecha_devolucion; ?>">
+                    </div>
+                                        <button type="submit" class="btn btn-success">
                         Agregar
                     </button>
                     <a name="" id="" class="btn btn-danger" href="index.php" role="button">Volver</a>
