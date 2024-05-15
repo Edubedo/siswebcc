@@ -20,10 +20,6 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 ?>
 
 
-<?php 
-    include("../../templates/footer.php");
-?>
-
 
 <!DOCTYPE html>
 <html lang="es"> 

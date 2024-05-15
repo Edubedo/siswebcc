@@ -24,22 +24,6 @@
 
     <!-- Carousel Fin -->
 
-    <!-- Servicios Inicio -->
-    <div class="section-title">
-        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h2>
-        <?php include("./templates/views/servicios.php"); ?>
-    </div>
-    <!-- Servicios Fin -->
-
-
-
-    <!-- Equipos Computo Inicio -->
-    <div class="section-title">
-        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Equipos de Computo</h2>
-        <?php include("./templates/views/equipos-computo.php"); ?>
-    </div>
-    <!-- Equipos Computo Fin -->
-
     <!-- Contacto Inicio -->
     <div class="section-title">
         <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contactanos</h2>

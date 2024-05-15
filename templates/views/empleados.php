@@ -1,28 +1,28 @@
+<?php
+include("./admin/bd.php"); // We need to add the db
+
+$sentencia = $conexion->prepare("SELECT * FROM `tbl_usuarios` WHERE tipo_usuario='Soporte'");
+$sentencia->execute();
+$lista_empleados = $sentencia->fetchAll(PDO::FETCH_ASSOC); // We need to fetch the data
+?>
+
 <div class="py-5 container-fluid">
-        <div class="container">
-            <div class="col-lg-6">
+    <div class="container">
+        <div class="col-lg-6">
+            <?php foreach ($lista_empleados as $servicio) : ?>
                 <div class="mb-5 row align-items-center">
                     <div class="col-4 col-sm-3">
-                        <img class="mb-3 w-100 mb-sm-0" src="img/escudo6.jpg" alt="Empleada Miriam Silvestre" width="200" height="150">
-                    </div> 
-                    <div class="col-8 col-sm-9">
-                        <h4>Miriam Silvestre</h4>
-                        <p class="m-0">Encargada del Centro de Computaci&oacute;n del Turno Matutino del Bachillerato 8.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mb-5 row align-items-center">
-                    <div class="col-4 col-sm-3">
-                        <img class="mb-3 w-100 mb-sm-0" src="img/escudo6.jpg" alt="Empleado Carlos Barraza" width="200" height="150">
+                        <img class="mb-3 w-100 circle mb-sm-0" src="img/<?php echo $servicio['foto']; ?>" alt="<?php echo $servicio['nombre_completo']; ?>" width="200" height="150">
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Carlos Barraza</h4>
-                        <p class="m-0">Auxiliar en Servicio del Centro de Computaci&oacute;n del Turno Vespertino del Bachillerato 9.
-                        </p>
+                        <h4><?php echo $servicio['nombre_completo']; ?></h4>
+                        <p class="m-0"><b>Correo:</b> <?php echo $servicio['correo']; ?></p>
                     </div>
                 </div>
-                
-            </div>
+            <?php endforeach; ?>
+
+
+
         </div>
     </div>
+</div>

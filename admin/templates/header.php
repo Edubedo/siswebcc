@@ -16,7 +16,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="p-4 ml-auto navbar-nav">
                      <a class="nav-link" href="<?php echo $url_admin ?>secciones/servicios">Servicios</a>
-                     <a class="nav-link" href="<?php echo $url_admin ?>secciones/equipo">Equipo</a>
+                     <a class="nav-link" href="<?php echo $url_admin ?>secciones/equipo">Equipos de computo</a>
                      <a class="nav-link" href="<?php echo $url_admin ?>secciones/prestamos">Prestamos</a>
                      <a class="nav-link" href="<?php echo $url_admin ?>secciones/usuarios">Usuarios</a>
                     <a href="<?php echo $url_blog ?>" class="nav-item nav-link">Blog</a>

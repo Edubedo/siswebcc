@@ -8,9 +8,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="p-4 ml-auto navbar-nav">
-                    <a href="empleados.php" class="nav-item nav-link">Equipo de trabajo</a>
                     <a href="servicios.php" class="nav-item nav-link">Servicios</a>
                     <a href="equipos-computo.php" class="nav-item nav-link">Equipos de computo</a>
+                    <a href="empleados.php" class="nav-item nav-link">Equipos de trabajo</a>
                     <a href="contacto.php" class="nav-item nav-link">Contacto</a>
                     <a href="admin/login.php" class="nav-item nav-link">Administrador</a>
                 </div>
