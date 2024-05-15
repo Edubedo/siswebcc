@@ -32,9 +32,10 @@ if ($_POST) {
     $estado = (isset($_POST['estado'])) ? $_POST['estado'] : "";
     $fecha_prestamo = (isset($_POST['fecha_prestamo'])) ? $_POST['fecha_prestamo'] : "";
     $fecha_devolucion = (isset($_POST['fecha_devolucion'])) ? $_POST['fecha_devolucion'] : "";
+    $equipo_computo = (isset($_POST['equipo_computo'])) ? $_POST['equipo_computo'] : "";
 
-    $sentencia = $conexion->prepare("INSERT INTO `tbl_historial_prestamos` (`ID`, `s_asunto`, `s_descripcion`, `d_fecha_creacion`, `nombre`, `grado_grupo`, `fecha_prestamo`, `fecha_devolucion`, `estado`)
-     VALUES (NULL, '$asunto', '$descripcion', CURRENT_TIMESTAMP, '$nombre', '$grado_grupo', '$fecha_prestamo', '$fecha_devolucion', '$estado');");
+    $sentencia = $conexion->prepare("INSERT INTO `tbl_historial_prestamos` (`ID`, `s_asunto`, `s_descripcion`, `d_fecha_creacion`, `nombre`, `grado_grupo`, `fecha_prestamo`, `fecha_devolucion`, `estado`, `equipo_computo`)
+     VALUES (NULL, '$asunto', '$descripcion', CURRENT_TIMESTAMP, '$nombre', '$grado_grupo', '$fecha_prestamo', '$fecha_devolucion', '$estado', '$equipo_computo');");
 
     $sentencia->execute();
 

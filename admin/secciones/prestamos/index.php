@@ -106,6 +106,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                     <th scope="col">ID</th>
                     <th scope="col">Asunto</th>
                     <th scope="col">Solicitante</th>
+                    <th scope="col">Equipo</th>
                     <th scope="col">Grado y Grupo</th>
                     <th scope="col">Fecha Prestamo</th>
                     <th scope="col">Fecha Devolución</th>
@@ -119,6 +120,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
                     <td><?php echo $registro['ID'] ?></td>
                     <td><?php echo $registro['s_asunto'] ?></td>
                     <td><?php echo $registro['nombre'] ?></td>
+                    <td><?php echo $registro['equipo_computo'] ?></td>
                     <td><?php echo $registro['grado_grupo'] ?></td>
                     <td><?php echo $registro['fecha_prestamo'] ?></td>
                     <td><?php echo $registro['fecha_devolucion'] ?></td>

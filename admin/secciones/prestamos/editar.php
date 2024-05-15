@@ -6,7 +6,6 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 include("../../bd.php"); // We need to add the db
-
 // Obtener los estatus de la tabla tbl_estatus
 $query = $conexion->query("SELECT * FROM tbl_estatus");
 $estatus = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -30,48 +29,40 @@ if (isset($_GET['txtID'])) { // If the key 'txtID' exists in the $_GET array
     $sentencia->bindParam(':ID', $_GET['txtID']);
     $sentencia->execute();
 
-    $registro = $sentencia->fetch(PDO::FETCH_LAZY);
+    $registro = $sentencia->fetch(PDO::FETCH_ASSOC);
     $id = $registro['ID'];
     $s_asunto = $registro['s_asunto'];
     $s_descripcion = $registro['s_descripcion'];
-    $d_fecha_creacion = $registro['d_fecha_creacion'];
     $nombre = $registro['nombre'];
     $marca = $registro['marca'];
     $modelo = $registro['modelo'];
     $grado_grupo = $registro['grado_grupo'];
     $fecha_prestamo = $registro['fecha_prestamo'];
     $fecha_devolucion = $registro['fecha_devolucion'];
-    $estado = $registro['estado'];
+    $estado_servicio = $registro['estado'];
     $equipo_computo = $registro['equipo_computo'];
 
 }
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['txtID'];
-    $s_asunto = $_POST['s_asunto'];
+    $s_asunto = $_POST['asunto'];
+    $s_descripcion = $_POST['descripcion'];
     $nombre = $_POST['nombre'];
     $estado_servicio = $_POST['estado'];
-    $responsable = $_POST['responsable'];
-    $tipo = $_POST['tipo'];
-    $grado_grupo = $_POST['grad$grado_grupo'];
-    $marca = $_POST['marca'];
+    $grado_grupo = $_POST['grado_grupo'];
     $equipo_computo = $_POST['equipo_computo'];
-    $modelo = $_POST['modelo'];
-    $descripcion = $_POST['descripcion'];
-    $foto = $_POST['foto'];
- 
+    $fecha_prestamo = $_POST['fecha_prestamo'];
+    $fecha_devolucion = $_POST['fecha_devolucion'];
 
-    $sentencia = $conexion->prepare("UPDATE `tbl_historial_prestamos` 
-    SET `s_asunto`=:s_asunto,`nombre`=:nombre, `descripcion`=:descripcion, `tipo`=:tipo, `estado`=:estado, `marca`=:marca, `modelo`=:modelo, `equipo_computo`=:equipo_computo  
-    WHERE `ID`=:ID");
-    $sentencia->bindParam(':nombre', $nombre);
+    $sentencia = $conexion->prepare("UPDATE `tbl_historial_prestamos` SET `s_asunto`=:s_asunto, `s_descripcion`=:s_descripcion, `nombre`=:nombre, `estado`=:estado, `grado_grupo`=:grado_grupo, `equipo_computo`=:equipo_computo, `fecha_prestamo`=:fecha_prestamo, `fecha_devolucion`=:fecha_devolucion WHERE `ID`=:ID");
     $sentencia->bindParam(':s_asunto', $s_asunto);
+    $sentencia->bindParam(':s_descripcion', $s_descripcion);
+    $sentencia->bindParam(':nombre', $nombre);
     $sentencia->bindParam(':estado', $estado_servicio);
-    $sentencia->bindParam(':tipo', $tipo);
-    $sentencia->bindParam(':marca', $marca);
-    $sentencia->bindParam(':modelo', $modelo);
-    $sentencia->bindParam(':descripcion', $descripcion);
+    $sentencia->bindParam(':grado_grupo', $grado_grupo);
     $sentencia->bindParam(':equipo_computo', $equipo_computo);
+    $sentencia->bindParam(':fecha_prestamo', $fecha_prestamo);
+    $sentencia->bindParam(':fecha_devolucion', $fecha_devolucion);
     $sentencia->bindParam(':ID', $id);
     $sentencia->execute();
 
@@ -80,7 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 include("../../templates/header.php");
 ?>
-
 
 <!DOCTYPE html>
 <html lang="es">
@@ -156,7 +146,7 @@ include("../../templates/header.php");
                         <label for="grado_grupo" class="form-label">Grado y grupo</label>
                         <select class="form-control" name="grado_grupo" id="grado_grupo" required="true">
                             <?php foreach ($gradosGrupos as $gradgr) : ?>
-                                <option value="<?php echo $gradgr['nombre']; ?>" <?php echo $gradgr['nombre'] == $gradgr ? 'selected' : ''; ?>>
+                                <option value="<?php echo $gradgr['nombre']; ?>" <?php echo $gradgr['nombre'] == $grado_grupo ? 'selected' : ''; ?>>
                                     <?php echo $gradgr['nombre']; ?>
                                 </option>
                             <?php endforeach; ?>
@@ -166,12 +156,11 @@ include("../../templates/header.php");
                     <div class="mb-3">
                         <label for="equipo_computo" class="form-label">Equipo de computo</label>
                         <select class="form-control" name="equipo_computo" id="equipo_computo" required="true">
-                            <?php foreach ($equiposComputo as $equipo_computo) : ?>
-                                <option value="<?php echo $equipo_computo['nombre']; ?>"><?php echo $equipo_computo['nombre']; ?></option>
+                            <?php foreach ($equiposComputo as $eq_computo) : ?>
+                                <option value="<?php echo $eq_computo['nombre']; ?>" <?php echo $eq_computo['nombre'] == $equipo_computo ? 'selected' : ''; ?>><?php echo $eq_computo['nombre']; ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>
-
 
                     <div class="mb-3">
                         <label for="estado" class="form-label">Estado</label>
