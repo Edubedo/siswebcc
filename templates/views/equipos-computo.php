@@ -19,7 +19,7 @@ $lista_no_disponibles = $sentencia_no_disponibles->fetchAll(PDO::FETCH_ASSOC); /
                 <?php foreach ($lista_disponibles as $equipo) : ?>
                     <div class="mb-5 row align-items-center equipo">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="<?= $equipo['foto'] ?>" alt="<?= $equipo['nombre'] ?>" width="200" height="150">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/equipos/<?= $equipo['foto'] ?>" alt="<?= $equipo['nombre'] ?>" width="200" height="150">
                         </div>
                         <div class="col-8 col-sm-9">
                             <h4><?= $equipo['nombre'] ?></h4>
@@ -34,7 +34,7 @@ $lista_no_disponibles = $sentencia_no_disponibles->fetchAll(PDO::FETCH_ASSOC); /
                 <?php foreach ($lista_no_disponibles as $equipo) : ?>
                     <div class="mb-5 row align-items-center equipo">
                         <div class="col-4 col-sm-3">
-                            <img class="mb-3 w-100 circle mb-sm-0" src="<?= $equipo['foto'] ?>" alt="<?= $equipo['nombre'] ?>" width="200" height="150">
+                            <img class="mb-3 w-100 circle mb-sm-0" src="img/equipos/<?= $equipo['foto'] ?>" alt="<?= $equipo['nombre'] ?>" width="200" height="150">
                         </div>
                         <div class="col-8 col-sm-9">
                             <h4><?= $equipo['nombre'] ?></h4>

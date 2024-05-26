@@ -41,6 +41,7 @@ if (isset($_GET['txtID'])) { // If the key 'txtID' exists in the $_GET array
     $fecha_devolucion = $registro['fecha_devolucion'];
     $estado_servicio = $registro['estado'];
     $equipo_computo = $registro['equipo_computo'];
+    $d_fecha_creacion = $registro['d_fecha_creacion'];
 
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -53,8 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $equipo_computo = $_POST['equipo_computo'];
     $fecha_prestamo = $_POST['fecha_prestamo'];
     $fecha_devolucion = $_POST['fecha_devolucion'];
-
-    $sentencia = $conexion->prepare("UPDATE `tbl_historial_prestamos` SET `s_asunto`=:s_asunto, `s_descripcion`=:s_descripcion, `nombre`=:nombre, `estado`=:estado, `grado_grupo`=:grado_grupo, `equipo_computo`=:equipo_computo, `fecha_prestamo`=:fecha_prestamo, `fecha_devolucion`=:fecha_devolucion WHERE `ID`=:ID");
+    $d_fecha_creacion = $_POST['d_fecha_creacion'];
+    
+    $sentencia = $conexion->prepare("UPDATE `tbl_historial_prestamos` SET `s_asunto` = '$s_asunto', `s_descripcion` = '$s_descripcion', `d_fecha_creacion` = '$d_fecha_creacion', `nombre` = '$nombre', `grado_grupo` = '$grado_grupo', `fecha_prestamo` = '$fecha', `fecha_devolucion` = '$fecha_devolucion', `estado` = '$estatus', `equipo_computo` = '$equipo_computo' WHERE `tbl_historial_prestamos`.`ID` = '$ID';");
     $sentencia->bindParam(':s_asunto', $s_asunto);
     $sentencia->bindParam(':s_descripcion', $s_descripcion);
     $sentencia->bindParam(':nombre', $nombre);
