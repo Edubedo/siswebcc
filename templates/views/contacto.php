@@ -25,7 +25,12 @@
                     <iframe title="Mapa de manzanillo" style="width: 100%; height: 443px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15084.827407510706!2d-104.32285323494948!3d19.05464086547173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8424d59e6574a7dd%3A0x8c7f4de7ba7dc36b!2sTechnical%20High%20School%20No.%208%2C%209%20and%2010%20University%20of%20Colima!5e0!3m2!1sen!2smx!4v1713203573452!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="pb-5 col-md-6">
-                    E
+                <div class="mb-5 col-lg-4"> <!-- Cambiado de col-lg-3 a col-lg-4 -->
+            <h4 class="mb-4 text-white text-uppercase" style="letter-spacing: 3px;">Datos de Contacto</h4>
+            <p><i class="mr-2 fa fa-map-marker-alt"></i>Bachillerato Tecnico No. 8, 9 y 10 Universidad de Colima</p>
+            <p><i class="mr-2 fa fa-phone-alt"></i>+52 3141172123</p>
+            <p class="m-0"><i class="mr-2 fa fa-envelope"></i>msilvestre@ucol.mx</p>
+        </div>
                 </div>
             </div>
         </div>
