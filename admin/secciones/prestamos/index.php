@@ -30,12 +30,13 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
 <!DOCTYPE html>
 <html lang="es"> 
     <head>
-        <title>Administrador compudc</title>
+        <title>Administrar prestamos | Sistema de prestamo de equipos de computo</title>
             <!-- Meta -->
         <?php include("./templates/etiquetas-meta.php"); ?>
             <!-- Icono -->
         <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <!-- Rel Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
         <link

@@ -33,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+		<link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
 
         <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.min.css">
 
@@ -148,7 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				<div>
                 <div class="top-header">
 					<h1>COMPUDC</h1>
-					<h2>Iniciar Sesion</h2>
+					<h2>Acceder como administrador</h2>
 				</div>
                 
                 <form action="" method="post">
@@ -194,9 +195,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<input type="checkbox" id="check" />
 						<label for="check"> Recordarme</label>
 					</div>
-					<div class="right">
-						<label><a href="restaurarContrasena.php">¿Olvidaste la contraseña?</a></label>
-					</div>
+					
 				</div>
 			</div>
 		<a href="../index.php" style="text-align:left">Volver al blog</a>
