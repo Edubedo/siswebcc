@@ -25,6 +25,7 @@ $url_blog="http://localhost/compudc/";
     <style>
         body {
             background-color: #f8f9fa;
+
         }
         .page-header {
             background: #3F9E5F;
@@ -50,25 +51,22 @@ $url_blog="http://localhost/compudc/";
     <?php include("./templates/header.php");?>
     <!-- Navbar Fin -->
 
-    <!-- Página Encabezado Inicio -->
-    <div class="container-fluid page-header position-relative">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 200px">
-            <h1 class="display-4 text-uppercase">Bienvenid@ al modo administrador</h1>
-        </div>
-    </div>
-    <!-- Página Encabezado Fin -->
-
     <!-- Contenido Principal Inicio -->
+    <div class="flex-grow-1">
     <div class="container">
         <div class="welcome-card">
             <h2>Panel de Administración</h2>
             <p>Utilice las opciones de la barra de navegación para gestionar servicios, equipos de computo, préstamos, y usuarios.</p>
         </div>
     </div>
+</div>
+    
     <!-- Contenido Principal Fin -->
 
     <!-- Footer Inicio -->
+    <div class="mt-auto">
     <?php include("./templates/footer.php"); ?>
+    </div>
     <!-- Footer Fin -->
 
     <?php include("./templates/librerias-js.php"); ?>

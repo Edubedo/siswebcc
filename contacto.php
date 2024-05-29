@@ -15,7 +15,7 @@
         <link href="css/style.min.css" rel="stylesheet">
     </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navbar Inicio -->
     <?php include("./templates/header.php");
     ?>
@@ -38,12 +38,16 @@
 
 
     <!-- Contacto Inicio -->
-    <?php include("./templates/views/contacto.php"); ?>
+    <div class="flex-grow-1">
+        <?php include("./templates/views/contacto.php"); ?>
+    </div>
     <!-- Contacto Fin -->
 
 
     <!-- Footer Inicio -->
-    <?php include("./templates/footer.php"); ?>
+    <div class="mt-auto">
+        <?php include("./templates/footer.php"); ?>
+    </div>
     <!-- Footer Fin -->
 
 

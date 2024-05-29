@@ -147,7 +147,7 @@ if(isset($_GET['txtID'])){ // If the key 'txtID' exists in the $_GET array
     </div>
 
    <!-- Footer Inicio -->
-   <?php include("../../../templates/footer.php"); ?>
+   <?php include("../../templates/footer.php"); ?>
     <!-- Footer Fin -->
 
 <?php include("./templates/librerias-js.php"); ?>
