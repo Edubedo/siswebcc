@@ -23,7 +23,7 @@ $lista_no_disponibles = $sentencia_no_disponibles->fetchAll(PDO::FETCH_ASSOC); /
                         </div>
                         <div class="col-8 col-sm-9">
                             <h4><?= $equipo['nombre'] ?></h4>
-                            <p class="m-0"><?= $equipo['descripcion'] ?></p>
+                            <p class="m-0"><?= $equipo['tipo'] ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -38,7 +38,7 @@ $lista_no_disponibles = $sentencia_no_disponibles->fetchAll(PDO::FETCH_ASSOC); /
                         </div>
                         <div class="col-8 col-sm-9">
                             <h4><?= $equipo['nombre'] ?></h4>
-                            <p class="m-0"><?= $equipo['descripcion'] ?></p>
+                            <p class="m-0"><?= $equipo['tipo'] ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
